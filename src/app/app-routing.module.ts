@@ -1,7 +1,26 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./modules/core/core.module').then(mod => mod.CoreModule)
+  },
+  {
+    path: 'dbt-modules',
+    loadChildren: () => import('./modules/dbt/dbt.module').then(mod => mod.DbtModule)
+  },
+  // {
+  //   path: '**',
+  //   redirectTo: '/home',
+  //   pathMatch: 'full'
+  // }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
