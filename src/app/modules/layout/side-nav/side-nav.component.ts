@@ -12,6 +12,10 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['dbt-modules']);
   }
 
+  navigateAffirmations() {
+    this.router.navigate(['affirmations']);
+  }
+
   constructor(private router: Router) { }
 
   ngOnInit() {

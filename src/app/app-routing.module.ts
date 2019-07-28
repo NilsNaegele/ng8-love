@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'dbt-modules',
     loadChildren: () => import('./modules/dbt/dbt.module').then(mod => mod.DbtModule)
   },
+  {
+    path: 'affirmations',
+    loadChildren: () => import('./modules/more-support/more-support.module').then(mod => mod.MoreSupportModule)
+  },
   // {
   //   path: '**',
   //   redirectTo: '/home',

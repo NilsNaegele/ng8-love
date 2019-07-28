@@ -1,0 +1,22 @@
+.affirmations-card {
+    // width: 75%;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-top: 15%;
+    display: flex;
+    line-height: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(245, 188, 196);
+    color: #fff;
+  }
+  
+  .affirmations-div {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
