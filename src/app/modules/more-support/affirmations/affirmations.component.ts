@@ -13,7 +13,7 @@ const AFFIRMATIONS = [
   'In mir finde ich alles was ich brauche.',
   'Ich bin ein Gewinner.',
   'Ich liebe mich wie ich bin.',
-  'Ich brauche keine Schuldgefühle zu haben',
+  'Ich brauche keine Schuldgefühle zu haben.',
   'Ich darf meine Wut ausdrücken.',
   'Ich bin nicht für alles verantwortlich.',
   `Ich habe das Recht: 'Ich weiss es nicht' zu sagen.`,
@@ -42,7 +42,7 @@ const AFFIRMATIONS = [
   'Ich sehe mich selbst als schön, intelligent und voller Selbstvertrauen und so sehen mich auch die anderen.',
   'Ich bin schön.',
   'Mein Selbstvertrauen wird jeden Tag stärker.',
-  'Ich bin Kreativ.',
+  'Ich bin kreativ.',
   'Ich geniesse die einzelnen Momente meines Lebens.',
   'Ich habe die Freiheit, mein Leben so zu leben, wie ich es möchte.',
   'Ich bin aufrichtig mir selbst und anderen gegenüber.',
@@ -63,7 +63,7 @@ const AFFIRMATIONS = [
   'Ich bin okay.',
   'Ich bewege mich entschlossen und mit Selbstvertrauen.',
   'Ich bin eine liebende und fürsorgliche Person.',
-  'Ich bewege mich in eine positive Richtung udn komme meinen Zielen näher.',
+  'Ich bewege mich in eine positive Richtung und komme meinen Zielen näher.',
   'Ich mag meine Gefühle.',
   'Ich wertschätze mich selbst.',
   'Ich bin gut genug.',
@@ -107,8 +107,8 @@ const AFFIRMATIONS = [
   'Ich bin fair und aufrichtig gegenüber anderen.',
   'Heute ist mein Tag. Es gibt keinen anderen Menschen oder äussere Ereignisse, die diesen Tag ruinieren könnten.',
   'Ich mag mich.',
-  'Ich sorge für Menschen, die mir etwas bedeuten udn zeige ihnen, dass ich sie liebe und wertschätze.',
-  'Ich aktzeptiere mich selbst hier und jetzt.',
+  'Ich sorge für Menschen, die mir etwas bedeuten und zeige ihnen, dass ich sie liebe und wertschätze.',
+  'Ich akzeptiere mich selbst hier und jetzt.',
   'Ich bin ein guter Freund.',
   'Ich habe Zugang zu einer erstaunlichen und beeindruckenden Welt.',
   'Ich bin mutig.',
@@ -161,8 +161,8 @@ export class AffirmationsComponent implements OnInit {
     this.affirmation = this.selectRandomAffirmation();
   }
 
-  newAffirmation() {
-    this.affirmation = this.selectRandomAffirmation()
+  newAffirmation(): void {
+    this.affirmation = this.selectRandomAffirmation();
   }
 
   selectRandomAffirmation(): string {
