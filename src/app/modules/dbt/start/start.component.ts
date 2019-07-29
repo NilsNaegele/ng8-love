@@ -35,5 +35,8 @@ export class StartComponent {
     // console.log('Achtsamkeit');
     this.router.navigate(['/mindfulness']);
   }
+  navigateUmgangMitGefuehlen() {
+    this.router.navigate(['/emotions-regulation']);
+  }
 
 }

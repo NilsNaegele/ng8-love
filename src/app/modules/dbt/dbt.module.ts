@@ -6,11 +6,12 @@ import { SharedModule } from '../shared/shared.module';
 import { StartComponent } from './start/start.component';
 import { MindfulnessComponent } from './mindfulness/mindfulness.component';
 import { MindfulnessBottomSheetComponent } from './mindfulness-bottom-sheet/mindfulness-bottom-sheet.component';
+import { EmotionsRegulationComponent } from './emotions-regulation/emotions-regulation.component';
 
 
 
 @NgModule({
-  declarations: [ StartComponent, MindfulnessComponent, MindfulnessBottomSheetComponent ],
+  declarations: [ StartComponent, MindfulnessComponent, MindfulnessBottomSheetComponent, EmotionsRegulationComponent ],
   imports: [
     DbtRoutingModule,
     SharedModule

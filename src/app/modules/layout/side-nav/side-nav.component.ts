@@ -16,6 +16,10 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['affirmations']);
   }
 
+  navigateUmgangMitGefuehlen() {
+    this.router.navigate(['emotions-regulation']);
+  }
+
   constructor(private router: Router) { }
 
   ngOnInit() {
