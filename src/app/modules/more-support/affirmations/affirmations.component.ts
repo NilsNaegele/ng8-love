@@ -144,7 +144,16 @@ const AFFIRMATIONS = [
   'Ich achte darauf, was ich möchte.',
   'Ich bin stark körperlich, psychisch und emotional.',
   'Ich bin ein guter Freund.',
-  'Jetzt ist ein neuer Moment.'
+  'Jetzt ist ein neuer Moment.',
+  'Ich bleibe abstinent, egal was passiert.',
+  'Ich habe meinen Helden gefunden, der bin ich.',
+  'Ich bin mein bester Freund.',
+  'Ich kann alles machen, was ich will.',
+  'Ich mache dass wovor ich am meisten Angst habe, und dominiere meine Angst.',
+  'Ich bin selbstsicher.',
+  'Ich habe Selbstvertrauen.',
+  'Ich habe Selbstwert.',
+  'Ich liebe mich und akzeptiere mich wie ich bin.'
 ];
 
 @Component({
