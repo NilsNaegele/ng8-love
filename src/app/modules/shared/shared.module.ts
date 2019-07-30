@@ -33,6 +33,7 @@ import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { WelcomeDialogComponent } from './components/welcome-dialog/welcome-dialog.component';
 
 const SHARED_MODULES = [
   CommonModule,
@@ -69,11 +70,14 @@ const SHARED_MODULES = [
   RouterModule
 ];
 
-const SHARED_COMPONENTS = [];
+const SHARED_COMPONENTS = [
+  WelcomeDialogComponent
+];
 
 @NgModule({
-  declarations: [...SHARED_COMPONENTS],
+  declarations: [...SHARED_COMPONENTS ],
   imports: [...SHARED_MODULES],
-  exports: [...SHARED_MODULES, ...SHARED_COMPONENTS]
+  exports: [...SHARED_MODULES, ...SHARED_COMPONENTS],
+  entryComponents: [ WelcomeDialogComponent ]
 })
 export class SharedModule { }
