@@ -2,7 +2,7 @@
     Ich bin zufrieden und glücklich.
 </mat-card> -->
 
-<div class="affirmations-div" (click)="newAffirmation()">
+<div class="affirmations-div" [style.background-color]="color"  (click)="newAffirmation()">
         <mat-card class="affirmations-card mat-elevation-z8">
                 <span class="mat-h2 fancyFont">
                     {{ affirmation }}
