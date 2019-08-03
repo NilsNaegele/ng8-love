@@ -5,3 +5,18 @@
   .emotional-net {
       width: 100%;
   }
+
+  .inline-block {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+  }
+
+  .box {
+      border: 1px solid black;
+      background-color: lightgray;
+  }
+  .center {
+    justify-content: center;
+    display: flex;
+  }

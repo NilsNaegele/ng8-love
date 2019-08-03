@@ -97,7 +97,7 @@ const AFFIRMATIONS = [
   'Ich höre auf mich selbst.',
   'Es ist schön zu leben.',
   'Ich fühle mich ruhig und sicher Tag für Tag.',
-  'Ich aktzeptiere alle meine Gefühle als Teil von mir.',
+  'Ich akzeptiere alle meine Gefühle als Teil von mir.',
   'Ich folge meinen Träumen.',
   'Ich bin dankbar für all das, was mir gegeben wurde.',
   'Alles was das Leben mir zu bieten hat, ist wundervoll und es ist mein täglicher Entscheid, das Schöne zu geniessen.',
@@ -153,7 +153,8 @@ const AFFIRMATIONS = [
   'Ich bin selbstsicher.',
   'Ich habe Selbstvertrauen.',
   'Ich habe Selbstwert.',
-  'Ich liebe mich und akzeptiere mich wie ich bin.'
+  'Ich liebe mich und akzeptiere mich wie ich bin.',
+  'Ich fühle mich gut, ich darf mich gut fühlen.'
 ];
 
 @Component({
@@ -162,6 +163,7 @@ const AFFIRMATIONS = [
   styleUrls: ['./affirmations.component.scss']
 })
 export class AffirmationsComponent implements OnInit {
+  private static counter = 0;
   affirmation = '';
 
   constructor() { }
@@ -175,7 +177,10 @@ export class AffirmationsComponent implements OnInit {
   }
 
   selectRandomAffirmation(): string {
-    return AFFIRMATIONS[Math.floor(Math.random() * AFFIRMATIONS.length)];
+      if (AffirmationsComponent.counter === AFFIRMATIONS.length) {
+        AffirmationsComponent.counter = 0;
+      }
+      return AFFIRMATIONS[AffirmationsComponent.counter++];
   }
 
 }
