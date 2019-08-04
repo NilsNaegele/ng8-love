@@ -7,9 +7,23 @@
     background-size: cover;
   }
 
+  .info-div {
+    margin-left: 10px;
+    max-height: 90vh;
+  }
+
+  .mat-tab-body-content {
+    height: 69vh !important;
+    /* overflow: hidden; */
+}
+
+.dialectical-view {
+  width: 60%;
+}
+
   .grey-box {
     border: 1px solid black; 
     background-color: lightgrey; 
-    text-align: center; 
+    text-align: center;
     width: 50%;
   }
