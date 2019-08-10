@@ -8,11 +8,19 @@ import { MindfulnessComponent } from './mindfulness/mindfulness.component';
 import { MindfulnessBottomSheetComponent } from './mindfulness-bottom-sheet/mindfulness-bottom-sheet.component';
 import { EmotionsRegulationComponent } from './emotions-regulation/emotions-regulation.component';
 import { MoreMindfulnessComponent } from './mindfulness/more-mindfulness/more-mindfulness.component';
+import { StressToleranceComponent } from './stress-tolerance/stress-tolerance.component';
 
 
 
 @NgModule({
-  declarations: [ StartComponent, MindfulnessComponent, MindfulnessBottomSheetComponent, EmotionsRegulationComponent, MoreMindfulnessComponent ],
+  declarations: [
+    StartComponent,
+    MindfulnessComponent,
+    MindfulnessBottomSheetComponent,
+    EmotionsRegulationComponent,
+    MoreMindfulnessComponent,
+    StressToleranceComponent
+  ],
   imports: [
     DbtRoutingModule,
     SharedModule

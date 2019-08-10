@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule, Router } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
 import { StartComponent } from './start/start.component';
 import { MindfulnessComponent } from './mindfulness/mindfulness.component';
 import { EmotionsRegulationComponent } from './emotions-regulation/emotions-regulation.component';
 import { MoreMindfulnessComponent } from './mindfulness/more-mindfulness/more-mindfulness.component';
+import { StressToleranceComponent } from './stress-tolerance/stress-tolerance.component';
 
 
 const dbtRoutes: Routes = [
@@ -23,6 +24,10 @@ const dbtRoutes: Routes = [
   {
     path: 'emotions-regulation',
     component: EmotionsRegulationComponent
+  },
+  {
+    path: 'stress-tolerance',
+    component: StressToleranceComponent
   }
 ];
 

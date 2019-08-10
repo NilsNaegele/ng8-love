@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Tangerine&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 html,
 body {
   height: 100%;
@@ -22,6 +23,12 @@ body {
   .fancyLacquerFont {
     font-family: 'Lacquer', sans-serif !important;
     font-size: 48px !important !important;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+
+  .fancyOrbitronFont {
+    font-family: 'Orbitron', sans-serif !important;
+    font-size: 17px !important;
     text-shadow: 4px 4px 4px #aaa;
   }
 

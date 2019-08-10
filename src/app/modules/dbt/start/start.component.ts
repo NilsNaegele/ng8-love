@@ -38,5 +38,8 @@ export class StartComponent {
   navigateUmgangMitGefuehlen() {
     this.router.navigate(['/emotions-regulation']);
   }
+  navigateToleranz() {
+    this.router.navigate(['/stress-tolerance']);
+  }
 
 }

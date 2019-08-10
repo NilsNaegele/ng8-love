@@ -1,0 +1,40 @@
+.tolerance-card {
+    max-width: 800px;
+  }
+
+  .tolerance-net {
+      width: 100%;
+  }
+
+  .inline-block {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+  }
+
+  .box {
+      border: 1px solid black;
+      background-color: lightgray;
+      text-align: center;
+  }
+  .center {
+    justify-content: center;
+    display: flex;
+  }
+
+  .round {
+    width: 500px;
+    margin: 20px auto;
+    height: 500px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    line-height: 500px;
+    text-align: center;
+    background: #000
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}

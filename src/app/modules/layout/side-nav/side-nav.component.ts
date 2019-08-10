@@ -20,6 +20,10 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['emotions-regulation']);
   }
 
+  navigateToleranz() {
+    this.router.navigate(['stress-tolerance']);
+  }
+
   constructor(private router: Router) { }
 
   ngOnInit() {
