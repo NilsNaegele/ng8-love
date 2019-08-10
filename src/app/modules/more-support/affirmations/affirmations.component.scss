@@ -1,13 +1,16 @@
+$break-small: 320px;
+
 .affirmations-card {
-    width: 300px;
-    height: 200px;
-    margin: auto;
-    margin-top: 15%;
-    display: flex;
-    line-height: 200px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  width: 800px;
+  min-height: 400px;
+  max-height: 600px;
+  margin: auto;
+  margin-top: 10%;
+  display: flex;
+  line-height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   }
   
   .affirmations-div {
@@ -16,4 +19,21 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  }
+
+  .big {
+    font-size: 108px !important;
+    line-height: 98%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .big {
+    font-size: 48px !important;
+    }
+    .affirmations-card {
+      width: 80%;
+      min-height: 30%;
+      max-height: 52%;
+      margin-top: 30%;
+    }
   }
