@@ -4,6 +4,7 @@ import { Routes, RouterModule, Router } from '@angular/router';
 import { StartComponent } from './start/start.component';
 import { MindfulnessComponent } from './mindfulness/mindfulness.component';
 import { EmotionsRegulationComponent } from './emotions-regulation/emotions-regulation.component';
+import { MoreMindfulnessComponent } from './mindfulness/more-mindfulness/more-mindfulness.component';
 
 
 const dbtRoutes: Routes = [
@@ -14,6 +15,10 @@ const dbtRoutes: Routes = [
   {
     path: 'mindfulness',
     component: MindfulnessComponent
+  },
+  {
+    path: 'more-mindfulness',
+    component: MoreMindfulnessComponent
   },
   {
     path: 'emotions-regulation',

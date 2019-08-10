@@ -6,6 +6,7 @@ import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-shee
 import {BehaviorSubject, merge, Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import { MindfulnessBottomSheetComponent } from '../mindfulness-bottom-sheet/mindfulness-bottom-sheet.component';
+import { Router } from '@angular/router';
 
 
 export class DynamicFlatNode {
@@ -113,7 +114,8 @@ export class DynamicDataSource {
   providers: [ DynamicDatabase ]
 })
 export class MindfulnessComponent implements OnInit {
-  constructor(database: DynamicDatabase, private bottomSheet: MatBottomSheet) {
+  constructor(database: DynamicDatabase, private bottomSheet: MatBottomSheet,
+              private router: Router) {
     this.treeControl = new FlatTreeControl<DynamicFlatNode>(this.getLevel, this.isExpandable);
     this.dataSource = new DynamicDataSource(this.treeControl, database);
 
@@ -143,6 +145,10 @@ export class MindfulnessComponent implements OnInit {
     this.bottomSheet.open(MindfulnessBottomSheetComponent, {
       data: { key: 'second'},
     });
+  }
+
+  moreMindfullness() {
+    this.router.navigate(['/more-mindfulness']);
   }
 
 }

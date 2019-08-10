@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
 html,
 body {
   height: 100%;
@@ -12,9 +13,15 @@ body {
     height: 100vh; // emmet h100vh
   }
 
-  .fancyFont {
+  .fancyTangerineFont {
     font-family: 'Tangerine', cursive !important;
     font-size: 48px !important;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+
+  .fancyLacquerFont {
+    font-family: 'Lacquer', sans-serif !important;
+    font-size: 48px !important !important;
     text-shadow: 4px 4px 4px #aaa;
   }
 
