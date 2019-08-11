@@ -42,4 +42,7 @@ export class StartComponent {
     this.router.navigate(['/stress-tolerance']);
   }
 
+  navigateRelationships() {
+    this.router.navigate(['/relationships']);
+ }
 }

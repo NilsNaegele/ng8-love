@@ -20,6 +20,10 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['emotions-regulation']);
   }
 
+  navigateBeziehungen() {
+    this.router.navigate(['relationships']);
+  }
+
   navigateToleranz() {
     this.router.navigate(['stress-tolerance']);
   }

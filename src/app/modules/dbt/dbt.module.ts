@@ -9,6 +9,7 @@ import { MindfulnessBottomSheetComponent } from './mindfulness-bottom-sheet/mind
 import { EmotionsRegulationComponent } from './emotions-regulation/emotions-regulation.component';
 import { MoreMindfulnessComponent } from './mindfulness/more-mindfulness/more-mindfulness.component';
 import { StressToleranceComponent } from './stress-tolerance/stress-tolerance.component';
+import { RelationshipsComponent } from './relationships/relationships.component';
 
 
 
@@ -19,7 +20,8 @@ import { StressToleranceComponent } from './stress-tolerance/stress-tolerance.co
     MindfulnessBottomSheetComponent,
     EmotionsRegulationComponent,
     MoreMindfulnessComponent,
-    StressToleranceComponent
+    StressToleranceComponent,
+    RelationshipsComponent
   ],
   imports: [
     DbtRoutingModule,

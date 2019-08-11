@@ -9,7 +9,29 @@
     </button>
 </mat-toolbar>
 <mat-menu x-position="before" #menu="matMenu">
-    <button mat-menu-item>Home</button>
-    <button mat-menu-item>Profile</button>
-    <button mat-menu-item>Add Note</button>
+    <button mat-menu-item routerLink="/affirmations">
+        <i class="material-icons align-icon">
+                sentiment_satisfied_alt
+                </i>
+        Affirmationen</button>
+    <button mat-menu-item routerLink="/more-mindfulness">
+        <i class="material-icons align-icon">
+                pregnant_woman
+                </i>
+        Achtsamkeit</button>
+    <button mat-menu-item routerLink="/emotions-regulation">
+        <i class="material-icons align-icon">
+                stars
+                </i>
+        Gefühle</button>
+        <button mat-menu-item routerLink="/relationships">
+            <i class="material-icons align-icon">
+                    mobile_friendly
+                    </i>
+            Beziehungen</button>
+    <button mat-menu-item routerLink="/stress-tolerance">
+        <i class="material-icons align-icon">
+                add_alarm
+                </i>
+        Toleranz</button>
 </mat-menu>
