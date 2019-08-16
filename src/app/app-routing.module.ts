@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'affirmations',
     loadChildren: () => import('./modules/more-support/more-support.module').then(mod => mod.MoreSupportModule)
   },
+  {
+    path: 'images',
+    loadChildren: () => import('./modules/shared/shared.module').then(mod => mod.SharedModule)
+  },
   // {
   //   path: '**',
   //   redirectTo: '/home',
