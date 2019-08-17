@@ -1,3 +1,4 @@
+import { GratitudeComponent } from './components/gratitude/gratitude.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -7,6 +8,10 @@ const sharedRoutes: Routes = [
   {
     path: '',
     component: PicturesComponent
+  },
+  {
+    path: 'gratitude',
+    component: GratitudeComponent
   }
 ];
 

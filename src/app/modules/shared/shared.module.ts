@@ -36,6 +36,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { WelcomeDialogComponent } from './components/welcome-dialog/welcome-dialog.component';
 import { PicturesComponent } from './components/pictures/pictures.component';
+import { GratitudeComponent } from './components/gratitude/gratitude.component';
 
 
 const SHARED_MODULES = [
@@ -78,7 +79,7 @@ const SHARED_COMPONENTS = [
 ];
 
 @NgModule({
-  declarations: [...SHARED_COMPONENTS, PicturesComponent ],
+  declarations: [...SHARED_COMPONENTS, PicturesComponent, GratitudeComponent ],
   imports: [...SHARED_MODULES, SharedRoutingModule ],
   exports: [...SHARED_MODULES, ...SHARED_COMPONENTS],
   entryComponents: [ WelcomeDialogComponent ]

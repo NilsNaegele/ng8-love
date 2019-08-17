@@ -3,11 +3,34 @@
                 <i class="material-icons">menu</i>
         </button>
     <span routerLink="/home" routerLinkActive="active">DBT Für Dich</span>
+    <button mat-icon-button [mat-menu-trigger-for]="lanMenu">
+                <mat-icon>language</mat-icon>
+   </button>
     <span class="space-between"></span>
     <button mat-icon-button [mat-menu-trigger-for]="menu">
         <mat-icon>more_vert</mat-icon>
     </button>
 </mat-toolbar>
+<mat-menu x-position="before" #lanMenu="matMenu">
+                <button mat-menu-item (click)="changeLang('us')">
+                    <span class="flag-icon flag-icon-us"></span>
+                American
+                </button>
+                    <button mat-menu-item (click)="changeLang('de')">
+                <span class="flag-icon flag-icon-de"></span>
+                    Deutsch
+                </button>
+                <button mat-menu-item (click)="changeLang('fr')">
+                <span class="flag-icon flag-icon-fr"></span>
+                    Francais
+                </button>
+                <button mat-menu-item routerLink="/gratitude">
+                <i class="material-icons align-icon" style="color:red;">
+                        favorite
+                </i>
+                   Dankbarkeit
+                </button>
+            </mat-menu>
 <mat-menu x-position="before" #menu="matMenu">
     <button mat-menu-item routerLink="/affirmations">
         <i class="material-icons align-icon">
