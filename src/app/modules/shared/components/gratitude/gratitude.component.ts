@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-gratitude',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GratitudeComponent implements OnInit {
   gratitude = '';
-  constructor() { }
+  constructor(public translate: TranslateService) { }
 
   ngOnInit() {
   }

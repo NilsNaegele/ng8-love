@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { MatDividerModule } from '@angular/material/divider';
 import { MatBadgeModule } from '@angular/material/badge';
@@ -30,17 +32,25 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatRippleModule } from '@angular/material/core';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
-import { SharedRoutingModule } from './shared-routing.module';
 
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
+
+import { SharedRoutingModule } from './shared-routing.module';
+import { TranslateModule } from '@ngx-translate/core';
+
+
 import { WelcomeDialogComponent } from './components/welcome-dialog/welcome-dialog.component';
 import { PicturesComponent } from './components/pictures/pictures.component';
 import { GratitudeComponent } from './components/gratitude/gratitude.component';
 
 
+
+
 const SHARED_MODULES = [
   CommonModule,
+  ReactiveFormsModule,
+  FormsModule,
+  RouterModule,
+  HttpClientModule,
   MatToolbarModule,
   MatCardModule,
   MatIconModule,
@@ -68,10 +78,7 @@ const SHARED_MODULES = [
   MatExpansionModule,
   MatRippleModule,
   MatTreeModule,
-  MatBottomSheetModule,
-  ReactiveFormsModule,
-  FormsModule,
-  RouterModule
+  MatBottomSheetModule
 ];
 
 const SHARED_COMPONENTS = [
@@ -80,8 +87,8 @@ const SHARED_COMPONENTS = [
 
 @NgModule({
   declarations: [...SHARED_COMPONENTS, PicturesComponent, GratitudeComponent ],
-  imports: [...SHARED_MODULES, SharedRoutingModule ],
-  exports: [...SHARED_MODULES, ...SHARED_COMPONENTS],
+  imports: [...SHARED_MODULES, SharedRoutingModule, TranslateModule ],
+  exports: [...SHARED_MODULES, ...SHARED_COMPONENTS, TranslateModule],
   entryComponents: [ WelcomeDialogComponent ]
 })
 export class SharedModule { }

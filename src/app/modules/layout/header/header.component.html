@@ -2,7 +2,7 @@
         <button mat-button class="app-menu-button" (click)="toggleSidenav()">
                 <i class="material-icons">menu</i>
         </button>
-    <span routerLink="/home" routerLinkActive="active">DBT Für Dich</span>
+    <span routerLink="/home" routerLinkActive="active">{{ 'HEADER.TITLE' | translate }}</span>
     <button mat-icon-button [mat-menu-trigger-for]="lanMenu">
                 <mat-icon>language</mat-icon>
    </button>
@@ -12,23 +12,23 @@
     </button>
 </mat-toolbar>
 <mat-menu x-position="before" #lanMenu="matMenu">
-                <button mat-menu-item (click)="changeLang('us')">
+                <button mat-menu-item (click)="changeLang('us')" [class.selected]="selectedLanguage === 'us'">
                     <span class="flag-icon flag-icon-us"></span>
                 American
                 </button>
-                    <button mat-menu-item (click)="changeLang('de')">
+                    <button mat-menu-item (click)="changeLang('de')" [class.selected]="selectedLanguage === 'de'">
                 <span class="flag-icon flag-icon-de"></span>
                     Deutsch
                 </button>
-                <button mat-menu-item (click)="changeLang('fr')">
+                <button mat-menu-item (click)="changeLang('fr')" [class.selected]="selectedLanguage === 'fr'">
                 <span class="flag-icon flag-icon-fr"></span>
                     Francais
                 </button>
-                <button mat-menu-item routerLink="/gratitude">
+                <button mat-menu-item routerLink="/gratitude" routerLinkActive="active">
                 <i class="material-icons align-icon" style="color:red;">
                         favorite
                 </i>
-                   Dankbarkeit
+                   {{ 'HEADER.GRATITUDE' | translate }}
                 </button>
             </mat-menu>
 <mat-menu x-position="before" #menu="matMenu">
@@ -36,30 +36,36 @@
         <i class="material-icons align-icon">
                 sentiment_satisfied_alt
                 </i>
-        Affirmationen</button>
+        {{ 'HEADER.MENU.AFFIRMATIONS' | translate }}
+        </button>
         <button mat-menu-item routerLink="/images">
                 <i class="material-icons align-icon">
                         image
                         </i>
-                Bilder</button>
+        {{ 'HEADER.MENU.IMAGES' | translate }}
+            </button>
     <button mat-menu-item routerLink="/more-mindfulness">
         <i class="material-icons align-icon">
                 pregnant_woman
                 </i>
-        Achtsamkeit</button>
+        {{ 'HEADER.MENU.MINDFULNESS' | translate }}    
+            </button>
     <button mat-menu-item routerLink="/emotions-regulation">
         <i class="material-icons align-icon">
                 stars
                 </i>
-        Gefühle</button>
+        {{ 'HEADER.MENU.EMOTIONS' | translate }}
+        </button>
         <button mat-menu-item routerLink="/relationships">
             <i class="material-icons align-icon">
                     mobile_friendly
                     </i>
-            Beziehungen</button>
+        {{ 'HEADER.MENU.RELATIONSHIPS' | translate }}
+                </button>
     <button mat-menu-item routerLink="/stress-tolerance">
         <i class="material-icons align-icon">
                 add_alarm
                 </i>
-        Toleranz</button>
+        {{ 'HEADER.MENU.TOLERANCE' | translate }}        
+            </button>
 </mat-menu>
