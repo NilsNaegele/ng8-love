@@ -43,6 +43,9 @@ import { PicturesComponent } from './components/pictures/pictures.component';
 import { GratitudeComponent } from './components/gratitude/gratitude.component';
 import { ValidationComponent } from './components/validation/validation.component';
 import { ValidationBottomSheetComponent } from './components/validation-bottom-sheet/validation-bottom-sheet.component';
+import { ValidationRelationshipsComponent } from './components/validation-bottom-sheet/validation-relationships/validation-relationships.component';
+import { ValidationEmotionsComponent } from './components/validation-bottom-sheet/validation-emotions/validation-emotions.component';
+import { ValidationStressToleranceComponent } from './components/validation-bottom-sheet/validation-stress-tolerance/validation-stress-tolerance.component';
 
 
 
@@ -88,9 +91,23 @@ const SHARED_COMPONENTS = [
 ];
 
 @NgModule({
-  declarations: [...SHARED_COMPONENTS, PicturesComponent, GratitudeComponent, ValidationComponent, ValidationBottomSheetComponent ],
+  declarations: [
+    ...SHARED_COMPONENTS,
+    PicturesComponent,
+    GratitudeComponent,
+    ValidationComponent,
+    ValidationBottomSheetComponent,
+    ValidationRelationshipsComponent,
+    ValidationEmotionsComponent,
+    ValidationStressToleranceComponent ],
   imports: [...SHARED_MODULES, SharedRoutingModule, TranslateModule ],
   exports: [...SHARED_MODULES, ...SHARED_COMPONENTS, TranslateModule],
-  entryComponents: [ WelcomeDialogComponent, ValidationBottomSheetComponent ]
+  entryComponents: [
+    WelcomeDialogComponent,
+    ValidationBottomSheetComponent,
+    ValidationRelationshipsComponent,
+    ValidationEmotionsComponent,
+    ValidationStressToleranceComponent
+  ]
 })
 export class SharedModule { }

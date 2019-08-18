@@ -1,5 +1,6 @@
+import { ValidationRelationshipsComponent } from './validation-relationships/validation-relationships.component';
 import { Component, OnInit } from '@angular/core';
-import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
+import { MatBottomSheetRef, MatBottomSheet } from '@angular/material/bottom-sheet';
 
 @Component({
   selector: 'app-validation-bottom-sheet',
@@ -8,7 +9,8 @@ import { MatBottomSheetRef } from '@angular/material/bottom-sheet';
 })
 export class ValidationBottomSheetComponent implements OnInit {
 
-  constructor(private bottomSheetRef: MatBottomSheetRef<ValidationBottomSheetComponent>) {}
+  constructor(private bottomSheetRef: MatBottomSheetRef<ValidationBottomSheetComponent>,
+              private bottomSheet: MatBottomSheet) {}
 
   openLink(event: MouseEvent): void {
     this.bottomSheetRef.dismiss();
@@ -16,6 +18,10 @@ export class ValidationBottomSheetComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  openRelationshipsBottomSheet() {
+    this.bottomSheet.open(ValidationRelationshipsComponent);
   }
 
 }
