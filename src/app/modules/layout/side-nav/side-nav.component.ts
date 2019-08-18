@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { TranslateService } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-side-nav',
   templateUrl: './side-nav.component.html',
@@ -28,7 +30,7 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['stress-tolerance']);
   }
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public translate: TranslateService) { }
 
   ngOnInit() {
   }

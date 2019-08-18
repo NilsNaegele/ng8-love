@@ -11,6 +11,23 @@
         "TOLERANCE": "Toleranz"
       }
     },
+    "SIDENAV": {
+      "T1": "DBT-Module",
+      "A": "Achtsamkeit",
+      "ER": "Emotions-Regulation",
+      "B": "Beziehungen",
+      "ST": "Stress-Toleranz",
+      "V": "Validierung",
+      "DBTT": "DBT-Tagebuch",
+      "T2": "Krisenbewältigung",
+      "ZS": "Zufällige Skills",
+      "FA": "Fokussierte Achtsamkeit",
+      "F": "Flashback",
+      "KB": "Krise Bewältigen",
+      "T3": "Weitere Unterstützung",
+      "SAG": "Stärkende/Alternative Gedanken",
+      "AT": "Affirmationen/Tips"
+    },
     "FOOTER": {
       "TEXT": "Gebaut in Bremen mit "
     },
@@ -66,7 +83,7 @@
       "YOURPLACEHOLDER": "Schreibe, ich liebe mich..."
     },
     "AFFIRMATIONS": {
-      "AFFIRMATION1": "Ich bin zufrieden und glücklich.",
+      "AFFIRMATION1": "Ich bin zufrieden und glücklich mit meinem Leben.",
       "AFFIRMATION2": "Ich bin willkommen.",
       "AFFIRMATION3": "Ich genüge mir immer.",
       "AFFIRMATION4": "Ich bin ein liebenswerter Mensch.",

@@ -1,72 +1,72 @@
 <mat-toolbar>
         <mat-toolbar-row>
-          <span>DBT-Module</span>
+          <span>{{ 'SIDENAV.T1' | translate }}</span>
           <span class="app-toolbar-filler"></span>
           <mat-icon class="example-icon">build</mat-icon>
         </mat-toolbar-row>
         <mat-toolbar-row>
-          <button mat-button (click)="navigateDbt()" class="app-sidebar-button">Achtsamkeit</button>
+          <button mat-button (click)="navigateDbt()" class="app-sidebar-button">{{ 'SIDENAV.A' | translate }}</button>
         </mat-toolbar-row>
         <mat-toolbar-row>
-            <button mat-button (click)="navigateUmgangMitGefuehlen()" class="app-sidebar-button">Emotions-Regulation</button>
+            <button mat-button (click)="navigateUmgangMitGefuehlen()" class="app-sidebar-button">{{ 'SIDENAV.ER' | translate }}</button>
         </mat-toolbar-row>
         <mat-toolbar-row>
-            <button mat-button (click)="navigateBeziehungen()"  class="app-sidebar-button">Beziehungen</button>
+            <button mat-button (click)="navigateBeziehungen()"  class="app-sidebar-button">{{ 'SIDENAV.B' | translate }}</button>
         </mat-toolbar-row>
         <mat-toolbar-row>
-            <button mat-button (click)="navigateToleranz()" class="app-sidebar-button">Stresstoleranz</button>
+            <button mat-button (click)="navigateToleranz()" class="app-sidebar-button">{{ 'SIDENAV.ST' | translate }}</button>
         </mat-toolbar-row>
         <mat-toolbar-row>
-            <button mat-button class="app-sidebar-button">Validierung</button>
+            <button mat-button class="app-sidebar-button">{{ 'SIDENAV.V' | translate }}</button>
         </mat-toolbar-row>
         <mat-toolbar-row>
-            <button mat-button class="app-sidebar-button">DBT-Tagebuch</button>
+            <button mat-button class="app-sidebar-button">{{ 'SIDENAV.DBTT' | translate }}</button>
         </mat-toolbar-row>
   
         <mat-toolbar-row>
-          <span>Krisenbewältigung</span>
+          <span>{{ 'SIDENAV.T2' | translate }}</span>
           <span class="app-toolbar-filler"></span>
           <mat-icon class="example-icon">add_alert</mat-icon>
         </mat-toolbar-row>
         <mat-toolbar-row>
           <button mat-raised-button color="warn" class="app-sidebar-button">
             <mat-icon class="example-icon">warning</mat-icon>
-            Zufällige Skills
+            {{ 'SIDENAV.ZS' | translate }}
           </button>
         </mat-toolbar-row>
         <mat-toolbar-row>
             <button mat-raised-button color="warn" class="app-sidebar-button">
               <mat-icon class="example-icon">warning</mat-icon>
-              Fokussierte Achtsamkeit
+              {{ 'SIDENAV.FA' | translate }}
             </button>
           </mat-toolbar-row>
           <mat-toolbar-row>
               <button mat-raised-button color="warn" class="app-sidebar-button">
                 <mat-icon class="example-icon">warning</mat-icon>
-                Flashback
+                {{ 'SIDENAV.F' | translate }}
               </button>
             </mat-toolbar-row>
             <mat-toolbar-row>
                 <button mat-raised-button color="warn" class="app-sidebar-button">
                   <mat-icon class="example-icon">warning</mat-icon>
-                  Krise bewältigen
+                  {{ 'SIDENAV.KB' | translate }}
                 </button>
               </mat-toolbar-row>
         <mat-toolbar-row>
-          <span>Weitere Unterstützung </span>
+          <span>{{ 'SIDENAV.T3' | translate }} </span>
           <span class="app-toolbar-filler"></span>
-          <mat-icon class="example-icon">favorite</mat-icon>
+          <mat-icon class="example-icon">grade</mat-icon>
         </mat-toolbar-row>
         <mat-toolbar-row>
           <button mat-raised-button color="accent" class="app-sidebar-button">
             <mat-icon class="example-icon">help</mat-icon>
-            Stärkende/Alternative Gedanken
+            {{ 'SIDENAV.SAG' | translate }}
           </button>
         </mat-toolbar-row>
         <mat-toolbar-row>
         <button (click)="navigateAffirmations()" mat-raised-button color="accent" class="app-sidebar-button">
             <mat-icon class="example-icon">help</mat-icon>
-            Affirmationen/Tips
+            {{ 'SIDENAV.AT' | translate }}
           </button>
         </mat-toolbar-row>
         <!-- <mat-toolbar-row>
