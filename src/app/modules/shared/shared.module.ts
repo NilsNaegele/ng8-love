@@ -41,6 +41,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { WelcomeDialogComponent } from './components/welcome-dialog/welcome-dialog.component';
 import { PicturesComponent } from './components/pictures/pictures.component';
 import { GratitudeComponent } from './components/gratitude/gratitude.component';
+import { ValidationComponent } from './components/validation/validation.component';
+import { ValidationBottomSheetComponent } from './components/validation-bottom-sheet/validation-bottom-sheet.component';
 
 
 
@@ -86,9 +88,9 @@ const SHARED_COMPONENTS = [
 ];
 
 @NgModule({
-  declarations: [...SHARED_COMPONENTS, PicturesComponent, GratitudeComponent ],
+  declarations: [...SHARED_COMPONENTS, PicturesComponent, GratitudeComponent, ValidationComponent, ValidationBottomSheetComponent ],
   imports: [...SHARED_MODULES, SharedRoutingModule, TranslateModule ],
   exports: [...SHARED_MODULES, ...SHARED_COMPONENTS, TranslateModule],
-  entryComponents: [ WelcomeDialogComponent ]
+  entryComponents: [ WelcomeDialogComponent, ValidationBottomSheetComponent ]
 })
 export class SharedModule { }

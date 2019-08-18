@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { PicturesComponent } from './components/pictures/pictures.component';
+import { ValidationComponent } from './components/validation/validation.component';
 
 const sharedRoutes: Routes = [
   {
@@ -12,6 +13,10 @@ const sharedRoutes: Routes = [
   {
     path: 'gratitude',
     component: GratitudeComponent
+  },
+  {
+    path: 'validation',
+    component: ValidationComponent
   }
 ];
 

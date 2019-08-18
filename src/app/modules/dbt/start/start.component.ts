@@ -45,4 +45,9 @@ export class StartComponent {
   navigateRelationships() {
     this.router.navigate(['/relationships']);
  }
+
+ navigateValidation() {
+   this.router.navigate(['/validation']);
+ }
+
 }

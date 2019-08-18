@@ -30,6 +30,10 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['stress-tolerance']);
   }
 
+  navigateValidation() {
+    this.router.navigate(['validation']);
+  }
+
   constructor(private router: Router, public translate: TranslateService) { }
 
   ngOnInit() {

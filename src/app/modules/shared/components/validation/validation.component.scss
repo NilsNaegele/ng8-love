@@ -1,0 +1,30 @@
+.validation-container {
+    margin-top: 25px;
+    cursor: pointer;
+    text-align: center;
+    
+  
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #3f51b5;
+    color: #fff;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .margin-top {
+      margin-top: 6%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .margin-top {
+        margin-top: 10%;
+    }
+  }
