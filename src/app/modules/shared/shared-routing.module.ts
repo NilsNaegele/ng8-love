@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PicturesComponent } from './components/pictures/pictures.component';
 import { ValidationComponent } from './components/validation/validation.component';
+import { ValidationSelfComponent } from './components/validation/validation-self/validation-self.component';
 
 const sharedRoutes: Routes = [
   {
@@ -17,6 +18,10 @@ const sharedRoutes: Routes = [
   {
     path: 'validation',
     component: ValidationComponent
+  },
+  {
+    path: 'validate-self',
+    component: ValidationSelfComponent
   }
 ];
 

@@ -11,6 +11,7 @@ import {
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
 import { ValidationBottomSheetComponent } from './../validation-bottom-sheet/validation-bottom-sheet.component';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -29,13 +30,14 @@ import { ValidationBottomSheetComponent } from './../validation-bottom-sheet/val
 })
 export class ValidationComponent implements OnInit {
 
-  constructor(private bottomSheet: MatBottomSheet) { }
+  constructor(private bottomSheet: MatBottomSheet, private router: Router) { }
 
   ngOnInit() {
   }
 
   navigate(validationType: string) {
     console.log(validationType);
+    this.router.navigate(['validate-self']);
   }
 
   openSkillsBottomSheet() {
