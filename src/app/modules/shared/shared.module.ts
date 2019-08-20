@@ -47,6 +47,8 @@ import { ValidationRelationshipsComponent } from './components/validation-bottom
 import { ValidationEmotionsComponent } from './components/validation-bottom-sheet/validation-emotions/validation-emotions.component';
 import { ValidationStressToleranceComponent } from './components/validation-bottom-sheet/validation-stress-tolerance/validation-stress-tolerance.component';
 import { ValidationSelfComponent } from './components/validation/validation-self/validation-self.component';
+import { ValidationOthersComponent } from './components/validation/validation-others/validation-others.component';
+import { ValidationGetComponent } from './components/validation/validation-get/validation-get.component';
 
 
 
@@ -101,7 +103,9 @@ const SHARED_COMPONENTS = [
     ValidationRelationshipsComponent,
     ValidationEmotionsComponent,
     ValidationStressToleranceComponent,
-    ValidationSelfComponent ],
+    ValidationSelfComponent,
+    ValidationOthersComponent,
+    ValidationGetComponent ],
   imports: [...SHARED_MODULES, SharedRoutingModule, TranslateModule ],
   exports: [...SHARED_MODULES, ...SHARED_COMPONENTS, TranslateModule],
   entryComponents: [

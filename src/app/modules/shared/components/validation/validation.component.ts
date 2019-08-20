@@ -37,7 +37,7 @@ export class ValidationComponent implements OnInit {
 
   navigate(validationType: string) {
     console.log(validationType);
-    this.router.navigate(['validate-self']);
+    this.router.navigate([validationType]);
   }
 
   openSkillsBottomSheet() {
