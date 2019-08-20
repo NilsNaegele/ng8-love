@@ -1,0 +1,95 @@
+[debug] [2019-08-20T19:20:30.691Z] ----------------------------------------------------------------------
+[debug] [2019-08-20T19:20:30.694Z] Command:       /home/nils-holger/.nvm/versions/node/v10.12.0/bin/node /home/nils-holger/.nvm/versions/node/v10.12.0/bin/firebase deploy
+[debug] [2019-08-20T19:20:30.694Z] CLI Version:   7.2.2
+[debug] [2019-08-20T19:20:30.694Z] Platform:      linux
+[debug] [2019-08-20T19:20:30.694Z] Node Version:  v10.12.0
+[debug] [2019-08-20T19:20:30.694Z] Time:          Tue Aug 20 2019 21:20:30 GMT+0200 (Central European Summer Time)
+[debug] [2019-08-20T19:20:30.695Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-08-20T19:20:30.700Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-20T19:20:30.701Z] > authorizing via signed-in user
+[debug] [2019-08-20T19:20:30.701Z] [iam] checking project ng8-love for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-08-20T19:20:30.702Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-20T19:20:30.703Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-08-20T19:20:30.920Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-20T19:20:30.931Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng8-love:testIamPermissions  
+
+[debug] [2019-08-20T19:20:31.833Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-20T19:20:31.839Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng8-love  
+ 
+[debug] [2019-08-20T19:20:32.241Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ng8-love'...
+[info] 
+[info] i  deploying firestore, functions, hosting
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script.
+[info] i  firestore: checking firestore.rules for compilation errors...
+[info] i  firestore: reading indexes from firestore.indexes.json...
+[debug] [2019-08-20T19:20:34.830Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/ng8-love:test  
+
+[debug] [2019-08-20T19:20:35.115Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: rules file firestore.rules compiled successfully
+[debug] [2019-08-20T19:20:35.120Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-08-20T19:20:35.123Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/ng8-love/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2019-08-20T19:20:35.125Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/ng8-love/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2019-08-20T19:20:36.115Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-20T19:20:36.144Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2019-08-20T19:20:36.146Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng8-love/adminSdkConfig  
+ 
+[debug] [2019-08-20T19:20:36.438Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-20T19:20:36.443Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ng8-love/versions  
+
+[debug] [2019-08-20T19:20:38.386Z] <<< HTTP RESPONSE 200
+[info] i  firestore: uploading rules firestore.rules...
+[debug] [2019-08-20T19:20:38.394Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/ng8-love/rulesets  
+
+[debug] [2019-08-20T19:20:38.395Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/ng8-love/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2019-08-20T19:20:38.793Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-20T19:20:38.794Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/ng8-love/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2019-08-20T19:20:39.204Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: deployed indexes in firestore.indexes.json successfully
+[debug] [2019-08-20T19:20:39.409Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-20T19:20:39.410Z] [rules] created ruleset projects/ng8-love/rulesets/c02297a7-7e9f-4198-b9e2-bcc18fe2245c
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2019-08-20T19:20:39.419Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/ng8-love/configs  
+ 
+[debug] [2019-08-20T19:20:39.819Z] <<< HTTP RESPONSE 200
+[info] i  hosting[ng8-love]: beginning deploy...
+[info] i  hosting[ng8-love]: found 536 files in dist
+[debug] [2019-08-20T19:20:40.037Z] [hosting] hash cache [ZGlzdA] load error: lines is not defined
+[debug] [2019-08-20T19:20:40.607Z] [hosting] hash cache [ZGlzdA] stored for 536 files
+[debug] [2019-08-20T19:20:40.607Z] [hosting][hash queue][FINAL]
+[debug] [2019-08-20T19:20:40.607Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ng8-love/versions/e676861572ace5f0:populateFiles  
+ <request body omitted>
