@@ -147,7 +147,7 @@ export class MindfulnessComponent implements OnInit {
     });
   }
 
-  moreMindfullness() {
+  moreMindfulness() {
     this.router.navigate(['/more-mindfulness']);
   }
 

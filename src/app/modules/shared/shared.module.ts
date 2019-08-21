@@ -4,6 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { MatDividerModule } from '@angular/material/divider';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -59,6 +61,7 @@ const SHARED_MODULES = [
   FormsModule,
   RouterModule,
   HttpClientModule,
+  FlexLayoutModule,
   MatToolbarModule,
   MatCardModule,
   MatIconModule,

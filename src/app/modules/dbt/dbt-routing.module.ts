@@ -7,6 +7,7 @@ import { EmotionsRegulationComponent } from './emotions-regulation/emotions-regu
 import { MoreMindfulnessComponent } from './mindfulness/more-mindfulness/more-mindfulness.component';
 import { StressToleranceComponent } from './stress-tolerance/stress-tolerance.component';
 import { RelationshipsComponent } from './relationships/relationships.component';
+import { MoreGoodnessMindfulnessComponent } from './mindfulness/more-goodness-mindfulness/more-goodness-mindfulness.component';
 
 
 const dbtRoutes: Routes = [
@@ -21,6 +22,10 @@ const dbtRoutes: Routes = [
   {
     path: 'more-mindfulness',
     component: MoreMindfulnessComponent
+  },
+  {
+    path: 'more-goodness-mindfulness',
+    component: MoreGoodnessMindfulnessComponent
   },
   {
     path: 'emotions-regulation',

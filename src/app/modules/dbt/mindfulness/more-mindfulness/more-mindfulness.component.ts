@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-more-mindfulness',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoreMindfulnessComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  moreGoodnessMindfulness() {
+    this.router.navigate(['/more-goodness-mindfulness']);
   }
 
 }
