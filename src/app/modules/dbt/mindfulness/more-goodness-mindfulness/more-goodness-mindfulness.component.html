@@ -1,89 +1,264 @@
 <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px">
-    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" >
-      <mat-card-header>
-        <mat-card-title>Intuitives Wissen (Wise Mind)</mat-card-title>
-        <mat-card-subtitle>
-            Bedeutet: Gefühl und Verstand in ein Gleichgewicht
-            zu bringen. Intuitives Wissen und Verstehen anzuwenden.
-        </mat-card-subtitle>
-      </mat-card-header>
-      <mat-card-content>
-        <mat-selection-list #opt>
-            <mat-list-option>
-              Versuche, mithilfe intuitiven Wissens zu entscheiden.
-            </mat-list-option>
-            <mat-list-option>
-                Nenne etwas, das Du an Dir selbst genau in diesem
-                Moment validieren kannst.
-              </mat-list-option>
-              <mat-list-option>
-               Was sagt Dir Dein Gefühl? Was sagt Dir Dein Verstand?
-               Kannst Du ein Gleichgewicht zwischen Gefühl und Verstand
-               herstellen?
-              </mat-list-option>
-          </mat-selection-list>
-          
-          <p>
-            Optionen gewählt: {{opt.selectedOptions.selected.length}}
-          </p>
-      </mat-card-content>
+    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+        <mat-card-header>
+            <mat-card-title>Intuitives Wissen (Wise Mind)</mat-card-title>
+            <mat-card-subtitle>
+                Bedeutet: Gefühl und Verstand in ein Gleichgewicht zu bringen.
+                Intuitives Wissen und Verstehen anzuwenden.
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <ul>
+                <li>
+                    Versuche, mithilfe intuitiven Wissens zu entscheiden.
+                </li>
+                <li>
+                    Nenne etwas, das Du an Dir selbst genau in diesem
+                    Moment validieren kannst.
+                </li>
+                <li>
+                    Was sagt Dir Dein Gefühl? Was sagt Dir Dein Verstand?
+                    Kannst Du ein Gleichgewicht zwischen Gefühl und Verstand
+                    herstellen?
+                </li>
+                <li>
+                    ...
+                </li>
+                <li>
+                    ...
+                </li>
+                <li>
+                    ...
+                </li>
+                <li>
+                    ...
+                </li>
+                <li>
+                    ...
+                </li>
+                <li>
+                    ...
+                </li>
+                <li>
+                    ...
+                </li>
+                <!-- <li>
+                    ...
+                </li> -->
+            </ul>
+        </mat-card-content>
     </mat-card>
-    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" >
+    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
         <mat-card-header>
-          <mat-card-title>Intuitives Wissen (Wise Mind)</mat-card-title>
-          <mat-card-subtitle>
-              Bedeutet: Gefühl und Verstand in ein Gleichgewicht
-              zu bringen. Intuitives Wissen und Verstehen anzuwenden.
-          </mat-card-subtitle>
+            <mat-card-title>Wahrnehmen</mat-card-title>
+            <mat-card-subtitle>
+                Bedeutet: Sich auf das einzulassen, was im Augenblick da ist.
+                Das Kommen und Gehen Deiner Gedanken und Gefühle zu erleben, ohne
+                darauf zu reagieren.
+            </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
-          <mat-selection-list #opti>
-              <mat-list-option>
-                Versuche, mithilfe intuitiven Wissens zu entscheiden.
-              </mat-list-option>
-              <mat-list-option>
-                  Nenne etwas, das Du an Dir selbst genau in diesem
-                  Moment validieren kannst.
-                </mat-list-option>
-                <mat-list-option>
-                 Was sagt Dir Dein Gefühl? Was sagt Dir Dein Verstand?
-                 Kannst Du ein Gleichgewicht zwischen Gefühl und Verstand
-                 herstellen?
-                </mat-list-option>
-            </mat-selection-list>
-            
-            <p>
-              Optionen gewählt: {{opti.selectedOptions.selected.length}}
-            </p>
+            <ul>
+                <li>
+                    Suche Dir einen Gegenstand aus und schaue ihn genau an.
+                    Beobachte, wie er aussieht und wie er sich anfühlt.
+                </li>
+                <li>
+                    Zünde eine Kerze an und beobachte die Flamme.
+                </li>
+                <li>
+                    Nimm wahr, was geschieht, ohne darauf zu reagieren.
+                </li>
+                <li>
+                    Mache Dir eine Tasse Kaffee oder Tee und trinke Schluck für
+                    Schluck ganz bewusst und langsam.
+                </li>
+                <li>
+                    Lass Gedanken und Gefühle an Dir vorbeiziehen.
+                </li>
+                <li>
+                    Lege oder setze Dich auf ein Sofa und spüre,
+                    wie sich Dein Körper anfühlt.
+                </li>
+                <li>
+                    Beobachte jeden Gedanken, jedes Gefühl und jede Handlung.
+                </li>
+                <li>
+                    Beobachte Deine Gedanken, Gefühle und Sinneswahrnehmungen.
+                </li>
+                <li>
+                    Nimm eine Dusche. Wie fühlt sich das Wasser auf Deiner Haut an?
+                    Welche Gefühle nimmst Du wahr?
+                </li>
+            </ul>
         </mat-card-content>
-      </mat-card>
-      <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" >
+    </mat-card>
+    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
         <mat-card-header>
-          <mat-card-title>Intuitives Wissen (Wise Mind)</mat-card-title>
-          <mat-card-subtitle>
-              Bedeutet: Gefühl und Verstand in ein Gleichgewicht
-              zu bringen. Intuitives Wissen und Verstehen anzuwenden.
-          </mat-card-subtitle>
+            <mat-card-title>Beschreiben</mat-card-title>
+            <mat-card-subtitle>
+                Bedeutet: Worte für Deine Gedanken und Gefühle zu finden. Zu benennen,
+                was Du erlebst.
+            </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
-          <mat-selection-list #options>
-              <mat-list-option>
-                Versuche, mithilfe intuitiven Wissens zu entscheiden.
-              </mat-list-option>
-              <mat-list-option>
-                  Nenne etwas, das Du an Dir selbst genau in diesem
-                  Moment validieren kannst.
-                </mat-list-option>
-                <mat-list-option>
-                 Was sagt Dir Dein Gefühl? Was sagt Dir Dein Verstand?
-                 Kannst Du ein Gleichgewicht zwischen Gefühl und Verstand
-                 herstellen?
-                </mat-list-option>
-            </mat-selection-list>
-            
-            <p>
-              Optionen gewählt: {{options.selectedOptions.selected.length}}
-            </p>
+            <ul>
+                <li>
+                    Benenne Deine Erfahrungen. Lass ein Gedanke nur einen
+                    Gedanken sein und ein Gefühl nur ein Gefühl.
+                </li>
+                <li>
+                    Sprich laut mit Dir selbst, beschreibe detailliert den
+                    Raum, in dem Du Dich befindest.
+                </li>
+                <li>
+                    Überprüfe, welches Gefühl Du gerade hast. Beschreibe es.
+                    Wo kannst du es im Körper fühlen? Wie fühlt es sich an?
+                </li>
+                <li>
+                    Wähle einen Gegenstand im Raum. Untersuche ihn gründlich und mache
+                    eine ausführliche Beschreibung seiner Eigenschaften wie Gewicht, Grösse,
+                    Form, Farbe und Anwendungsgebiete.
+                </li>
+                <li>
+                    Mache eine Achtsamkeitsübung. Beschreibe, welche Sinneswahrnehmungen
+                    Du in Deinem Körper beobachtest. Sind da auch Gefühle?
+                    Wenn ja, welche?
+                </li>
+                <li>
+                    ...
+                </li>
+                <li>
+                    ...
+                </li>
+                <!-- <li>
+                    ...
+                </li> -->
+            </ul>
         </mat-card-content>
-      </mat-card>
-  </div>
+    </mat-card>
+
+    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+        <mat-card-header>
+            <mat-card-title>Teilnehmen</mat-card-title>
+            <mat-card-subtitle>
+                Bedeutet: Aufzugehen im gegenwärtigen Moment. Aus Dir selbst heraus zu
+                handeln, ohne Verkrampfung oder Hemmungen. Zu erleben, ohne darüber nachzugrübeln,
+                was gerade los ist.
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <ul>
+                <li>
+                    Singe ein fröhliches Lied. Tauche ganz in die Welt des Liedes ein.
+                </li>
+                <li>
+                    Beschäftige Dich mit etwas, was Dir gefällt! Konzentriere Dich vollständig darauf
+                    und sei mit ganzem Herzen dabei. Du kannst beispielsweise malen, stricken, Seifen oder
+                    Kerzen machen.
+                </li>
+                <li>
+                   Sprich mit juemandem in Deiner Nähe. Schenke dieser Person Deine volle
+                   Aufmerksamkeit.
+                </li>
+                <li>
+                    Lies ein Buch, Magazin, oder ein Comic. Lass Dich vom Inhalt in eine andere
+                    Welt entführen.
+                </li>
+                <li>
+                    Lächle die Menschen, denen Du begegnest, aus ganzem Herzen an.
+                </li>
+                <li>
+                    ...
+                </li>
+                <li>
+                    ...
+                </li>
+                <li>
+                    ...
+                </li>
+            </ul>
+        </mat-card-content>
+    </mat-card>
+    <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+            <mat-card-header>
+                <mat-card-title>Annehmend (nicht bewertend)</mat-card-title>
+                <mat-card-subtitle>
+                    Bedeutet: die Situation wahrzunehmen, wie sie ist und sie zu akzeptieren.
+                    Die Situation nicht zu beurteilen und zu bewerten und sie nicht festhalten zu wollen.
+                </mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                <ul>
+                    <li>
+                       Beobachte Deine Gedanken, ob positiv oder negativ. Bewerte sie nicht.
+                    </li>
+                    <li>
+                       Suche einen Gegenstand und beschreibe ihn detailliert mit Hilfe Deiner Sinneseindrücke.
+                       Mache keine bewertende Angaben.
+                    </li>
+                    <li>
+                       Sprich mit juemandem in Deiner Nähe. Schenke dieser Person Deine volle
+                       Aufmerksamkeit.
+                    </li>
+                    <li>
+                        Beobachte Deine Gedanken und zähle die Anzahl Bewertungen, die Du in einem Zeitraum von
+                        15 Minuten machst.
+                    </li>
+                    <li>
+                        Wenn Dir auffällt, dass Du bewertest, versuche stattdessen rein beschreibende Worte zu verwenden.
+                    </li>
+                    <li>
+                        ...
+                    </li>
+                    <li>
+                        ...
+                    </li>
+                    <li>
+                        ...
+                    </li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+        <mat-card fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+                <mat-card-header>
+                    <mat-card-title>Konzentriert</mat-card-title>
+                    <mat-card-subtitle>
+                        Bedeutet: Dich immer auf eine Sache zu konzentrieren. Bei dir selbst und
+                        bei dieser Sache zu bleiben.
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <ul>
+                        <li>
+                           Mache etwas vollkommen Neues, bleibe bei dieser einen Sache und lass Dich nicht
+                           ablenken. Konzentriere Dich auf das, was Du tust. Mache nicht zwei Dinge gleichzeitig. 
+                        </li>
+                        <li>
+                           Konzentriere Dich auf Deinen Atem. Fühle Deinen Atem, zähle die Atemzüge und verändere
+                           Deinen Atemrhytmus.
+                        </li>
+                        <li>
+                           Wähle einen Gegenstand, zum Beispiel einen Stift. Versuche, Dir dreissig Dinge zu
+                           überlegen, wofür man diesen Gegenstand gebrauchen könnte.
+                        </li>
+                        <li>
+                            Mach einen Spaziergang.
+                        </li>
+                        <li>
+                          Mach den Abwasch und konzentriere Dich auf jede Bewegung und auf jeden Sinneseindruck.
+                          Wie fühlen sich Deine Hände im Wasser an?
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                        <li>
+                            ...
+                        </li>
+                    </ul>
+                </mat-card-content>
+            </mat-card>
+</div>
