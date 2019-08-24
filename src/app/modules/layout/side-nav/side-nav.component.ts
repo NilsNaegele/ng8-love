@@ -34,6 +34,10 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['validation']);
   }
 
+  navigateRandomSkills() {
+    this.router.navigate(['random-skills']);
+  }
+
   constructor(private router: Router, public translate: TranslateService) { }
 
   ngOnInit() {

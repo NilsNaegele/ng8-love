@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'images',
     loadChildren: () => import('./modules/shared/shared.module').then(mod => mod.SharedModule)
   },
+  {
+    path: 'random-skills',
+    loadChildren: () => import('./modules/crisis-mgt/crisis-mgt.module').then(mod => mod.CrisisMgtModule)
+  }
   // {
   //   path: '**',
   //   redirectTo: '/home',

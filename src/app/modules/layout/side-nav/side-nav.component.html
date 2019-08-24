@@ -29,7 +29,7 @@
           <mat-icon class="example-icon">add_alert</mat-icon>
         </mat-toolbar-row>
         <mat-toolbar-row>
-          <button mat-raised-button color="warn" class="app-sidebar-button">
+          <button mat-raised-button (click)="navigateRandomSkills()"  color="warn" class="app-sidebar-button">
             <mat-icon class="example-icon">warning</mat-icon>
             {{ 'SIDENAV.ZS' | translate }}
           </button>
