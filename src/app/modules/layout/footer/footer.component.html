@@ -1,5 +1,8 @@
 <footer>
-    <div class="copyright">{{ 'FOOTER.TEXT' | translate}} <mat-icon style="color: red;">favorite</mat-icon></div>
+    <div class="copyright">{{ 'FOOTER.TEXT' | translate}} 
+        <mat-icon (click)="navigateAffirmationsNewView()" 
+        class="favorite">favorite</mat-icon>
+    </div>
 </footer>
 <div class="addNote">
     <button mat-fab (click)="openDialog()">
