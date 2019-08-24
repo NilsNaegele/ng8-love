@@ -42,6 +42,10 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['focused-mindfulness']);
   }
 
+  navigateFlashback() {
+    this.router.navigate(['flashback']);
+  }
+
   constructor(private router: Router, public translate: TranslateService) { }
 
   ngOnInit() {

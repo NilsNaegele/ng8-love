@@ -1,0 +1,23 @@
+.container {
+    margin-top: 8vh;
+    margin: 8vh 5px 8vh;
+    text-align: center;
+  }
+
+  .flashback-card {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .flashback-net {
+    width: 100%;
+}
+
+  @media only screen and (max-width: 480px) {
+
+    .fancyMuliFont {
+        font-family: 'Muli', sans-serif !important;
+        font-size: 25px !important;
+      }
+
+  }

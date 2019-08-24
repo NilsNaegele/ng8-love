@@ -1,3 +1,4 @@
+import { FlashbackComponent } from './components/flashback/flashback.component';
 import { FocusedMindfulnessComponent } from './components/focused-mindfulness/focused-mindfulness.component';
 import { CrisisMgtComponent } from './components/crisis-mgt/crisis-mgt.component';
 import { NgModule } from '@angular/core';
@@ -19,6 +20,10 @@ const crisisRoutes: Routes = [
   {
     path: 'focused-mindfulness',
     component: FocusedMindfulnessComponent
+  },
+  {
+    path: 'flashback',
+    component: FlashbackComponent
   }
 ];
 

@@ -7,11 +7,12 @@ import { RandomSkillsComponent } from './components/random-skills/random-skills.
 import { CrisisMgtComponent } from './components/crisis-mgt/crisis-mgt.component';
 import { FocusedMindfulnessComponent } from './components/focused-mindfulness/focused-mindfulness.component';
 import { ImageComponent } from './components/image/image.component';
+import { FlashbackComponent } from './components/flashback/flashback.component';
 
 
 
 @NgModule({
-  declarations: [RandomSkillsComponent, CrisisMgtComponent, FocusedMindfulnessComponent, ImageComponent],
+  declarations: [RandomSkillsComponent, CrisisMgtComponent, FocusedMindfulnessComponent, ImageComponent, FlashbackComponent],
   imports: [
     CrisisRoutingModule,
     SharedModule

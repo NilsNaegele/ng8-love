@@ -1,11 +1,11 @@
 <footer>
     <div class="copyright">{{ 'FOOTER.TEXT' | translate}} 
-        <mat-icon (click)="navigateAffirmationsNewView()" 
+        <mat-icon (click)="openDialog()"
         class="favorite">favorite</mat-icon>
     </div>
 </footer>
 <div class="addNote">
-    <button mat-fab (click)="openDialog()">
+    <button mat-fab (click)="navigateAffirmationsNewView()">
         <mat-icon>add circle</mat-icon>
     </button>
 </div>
