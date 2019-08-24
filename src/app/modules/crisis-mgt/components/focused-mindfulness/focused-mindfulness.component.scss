@@ -1,0 +1,53 @@
+:host {
+    app-image {
+        display: inline-block;
+        width: 80px;
+      }
+
+    .letter {
+      font-size: 3em;
+      display: inline-block;
+      min-width: 0.2em;
+      color: #df4a32;
+    }
+  }
+
+  button.animate-btn {
+    height: 54px;
+    font-size: 1.3em;
+    font-weight: 400;
+    margin: 7px 15px 25px;
+    vertical-align: top;
+  }
+  
+  .container {
+    margin-top: 8vh;
+    margin: 8vh 5px 8vh;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 480px) {
+    :host {
+        .letter {
+          font-size: 2em;
+          display: inline-block;
+          min-width: 0.2em;
+          color: #df4a32;
+        }
+      }
+  }
+
+  @media only screen and (max-width: 800px) {
+    :host {
+        app-image {
+            display: inline-block;
+            width: 40px;
+          }
+        .letter {
+          font-size: 2em;
+          display: inline-block;
+          min-width: 0.2em;
+          color: #df4a32;
+        }
+      }
+  }

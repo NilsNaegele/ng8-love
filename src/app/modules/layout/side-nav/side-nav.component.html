@@ -35,7 +35,7 @@
           </button>
         </mat-toolbar-row>
         <mat-toolbar-row>
-            <button mat-raised-button color="warn" class="app-sidebar-button">
+            <button mat-raised-button (click)="navigateFocusedMindfulness()" color="warn" class="app-sidebar-button">
               <mat-icon class="example-icon">warning</mat-icon>
               {{ 'SIDENAV.FA' | translate }}
             </button>

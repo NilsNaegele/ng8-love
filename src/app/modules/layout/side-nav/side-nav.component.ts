@@ -38,6 +38,10 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['random-skills']);
   }
 
+  navigateFocusedMindfulness() {
+    this.router.navigate(['focused-mindfulness']);
+  }
+
   constructor(private router: Router, public translate: TranslateService) { }
 
   ngOnInit() {

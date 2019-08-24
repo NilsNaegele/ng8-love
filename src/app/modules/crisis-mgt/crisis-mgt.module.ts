@@ -5,11 +5,13 @@ import { CrisisRoutingModule } from './crisis-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { RandomSkillsComponent } from './components/random-skills/random-skills.component';
 import { CrisisMgtComponent } from './components/crisis-mgt/crisis-mgt.component';
+import { FocusedMindfulnessComponent } from './components/focused-mindfulness/focused-mindfulness.component';
+import { ImageComponent } from './components/image/image.component';
 
 
 
 @NgModule({
-  declarations: [RandomSkillsComponent, CrisisMgtComponent],
+  declarations: [RandomSkillsComponent, CrisisMgtComponent, FocusedMindfulnessComponent, ImageComponent],
   imports: [
     CrisisRoutingModule,
     SharedModule

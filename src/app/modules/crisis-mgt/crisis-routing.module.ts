@@ -1,3 +1,4 @@
+import { FocusedMindfulnessComponent } from './components/focused-mindfulness/focused-mindfulness.component';
 import { CrisisMgtComponent } from './components/crisis-mgt/crisis-mgt.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,6 +15,10 @@ const crisisRoutes: Routes = [
         component: RandomSkillsComponent
       }
     ]
+  },
+  {
+    path: 'focused-mindfulness',
+    component: FocusedMindfulnessComponent
   }
 ];
 

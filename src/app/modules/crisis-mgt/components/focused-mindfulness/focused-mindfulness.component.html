@@ -1,0 +1,18 @@
+<div class="container">
+        <div style="margin-right:148px;">
+          <app-image *ngFor="let i of [0,1,2,3,4]" [@enter]="{value: '', params: { delay: i * 150 }}" (@enter.done)="hueState = !hueState"></app-image>
+        </div>
+      
+        <button [@btnEnter] [@btnEnterFadeIn] mat-stroked-button color="primary" class="animate-btn" (click)="animate()">Weiter</button>
+      
+        <div [@flash]="flashState">
+          <div>
+            <div class="letter" *ngFor="let letter of text1; let i = index; let last = last" [@enterLetterAnim1]="{value: '', params: { delay: 1500 + i * 100} }"
+              [@letterAnim1]="{value: animationState, params: { delay: i * 30} }" [@hueLetter]="{value: hueState, params: {delay: i * 50}}"
+              (@letterAnim1.done)="last && hueState = !hueState">{{letter}}</div>
+          </div>
+      
+          <div>
+        </div>
+      </div>
+    

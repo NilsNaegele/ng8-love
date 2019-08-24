@@ -37,7 +37,7 @@ export class MoreAffirmationsComponent implements OnInit {
   hueState = false;
   flashState = false;
 
-  private randomSkills = [
+  private affirmations = [
     {
       text1: 'Ich bin willkommen.',
       text2: 'Ich genüge mir immer.',
@@ -368,10 +368,10 @@ export class MoreAffirmationsComponent implements OnInit {
     setTimeout(() => {
       this.animationState = true;
     }, 1);
-    this.text1 = this.randomSkills[MoreAffirmationsComponent.counter].text1.split('');
-    this.text2 = this.randomSkills[MoreAffirmationsComponent.counter].text2.split('');
-    this.text3 = this.randomSkills[MoreAffirmationsComponent.counter++].text3.split('');
-    if (MoreAffirmationsComponent.counter === 36) {
+    this.text1 = this.affirmations[MoreAffirmationsComponent.counter].text1.split('');
+    this.text2 = this.affirmations[MoreAffirmationsComponent.counter].text2.split('');
+    this.text3 = this.affirmations[MoreAffirmationsComponent.counter++].text3.split('');
+    if (MoreAffirmationsComponent.counter === 66) {
       MoreAffirmationsComponent.counter = 0;
     }
   }
