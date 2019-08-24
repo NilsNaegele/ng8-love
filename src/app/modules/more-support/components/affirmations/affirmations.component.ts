@@ -194,6 +194,7 @@ export class AffirmationsComponent implements OnInit {
       return AFFIRMATIONS[AffirmationsComponent.counter++];
   }
 
+
     getRandomColor(): string {
     const letters = '0123456789ABCDEF';
     let color = '#';

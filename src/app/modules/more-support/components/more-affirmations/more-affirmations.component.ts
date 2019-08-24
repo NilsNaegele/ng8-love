@@ -14,9 +14,9 @@ import {
 } from 'angular-animations';
 
 @Component({
-  selector: 'app-random-skills',
-  templateUrl: './random-skills.component.html',
-  styleUrls: ['./random-skills.component.scss'],
+  selector: 'app-more-affirmations',
+  templateUrl: './more-affirmations.component.html',
+  styleUrls: ['./more-affirmations.component.scss'],
   animations: [
     rotateInDownLeftOnEnterAnimation({ anchor: 'enter' }),
     zoomInDownOnEnterAnimation({ anchor: 'enterLetterAnim1' }),
@@ -31,7 +31,7 @@ import {
     fadeInOnEnterAnimation({ anchor: 'btnEnterFadeIn', delay: 12500, duration: 500 })
   ]
 })
-export class RandomSkillsComponent implements OnInit {
+export class MoreAffirmationsComponent implements OnInit {
   private static counter = 0;
   animationState = false;
   hueState = false;
@@ -39,60 +39,60 @@ export class RandomSkillsComponent implements OnInit {
 
   private randomSkills = [
     {
-      text1: 'Sich Ablenken',
-      text2: 'Tanze verrückt zu wilder Musik.',
-      text3: 'Schreibe einen Artikel oder Buch...'
+      text1: 'Ich bin willkommen',
+      text2: 'Ich genüge mir immer.',
+      text3: 'Ich bin ein liebenswerter Mensch.'
     },
     {
-      text1: 'Sich Ablenken',
-      text2: 'Ruf einen Freund an und sprich über irgend etwas anderes.',
-      text3: 'Du kannst beispielsweise fragen, was Dein Freund heute gemacht hat...'
+      text1: 'Ich brauche nichts zu tun um geliebt zu werden.',
+      text2: 'Ich bin unschuldig.',
+      text3: 'Ich bin wertvoll.'
     },   {
-      text1: 'Pro & Contra Abwägen',
-      text2: 'Erstelle eine Pro & Contra Liste für das Tolerieren unangenehmer Zustände',
-      text3: 'und eine weitere Liste für das Nicht-Tolerieren unangenehmer Zustände...'
+      text1: 'Ich habe ein Recht auf meine Meinung.',
+      text2: 'Ich habe ein Recht auf meine Gefühle.',
+      text3: 'In mir finde ich alles was ich brauche.'
     },
     {
-      text1: 'Sich Ablenken',
-      text2: 'einatmen 1, ausatmen 1. einatmen 2, ausatmen 2...',
-      text3: 'Zähle bis 10, und dann wieder zurück auf Null...'
+      text1: 'Ich bin ein Gewinner.',
+      text2: 'Ich liebe mich wie ich bin.',
+      text3: 'Ich brauche keine Schuldgefühle zu haben.'
     },   {
-      text1: 'Sich Ablenken',
-      text2: 'Zerreisse ein Leintuch',
-      text3: 'oder ein ausgetragenes Hemd...'
+      text1: 'Ich darf meine Wut ausdrücken.',
+      text2: 'Ich bin nicht für alles verantwortlich.',
+      text3: 'Ich habe das Recht: "Ich weiss es nicht" zu sagen.'
     },
     {
-      text1: 'Sich Ablenken',
-      text2: 'Schreib ein Kapitel eines Buches',
-      text3: 'von Hand ab...'
+      text1: 'Ich habe das Recht "Nein" zu sagen,',
+      text2: 'und muss mich dafür nicht rechtfertigen.',
+      text3: 'Ich habe das Recht andere um etwas zu bitten.'
     },   {
-      text1: 'Den Augenblick verbessern',
-      text2: 'Tröste Dich selbst. Erlaube Dir,',
-      text3: 'schwach zu sein...'
+      text1: 'Ich darf an mich gerichtete Bitten abschlagen.',
+      text2: 'Ich habe das Recht anderen mitzuteilen',
+      text3: 'wenn diese mich schlecht behandeln.'
     },
     {
-      text1: 'Akzeptieren',
-      text2: 'Entscheide Dich, die Dinge so zu akzeptieren,',
-      text3: 'wie sie sind, wieder und wieder...'
+      text1: 'Ich darf unzumutbare Anforderungen zurückweisen.',
+      text2: 'Ich brauche meinen Stolz und Würde nicht verletzen zu lassen.',
+      text3: 'Ich darf Fehler machen und mich irren.'
     },
     {
-      text1: 'Sich Ablenken',
-      text2: 'Renne eine Treppe rauf und runter.',
-      text3: 'Trainiere für einen Marathon...'
+      text1: 'Ich brauche nicht von allen bewundert',
+      text2: 'oder gemocht werden für alles was ich tue.',
+      text3: 'Ich bin talentiert.'
     },
      {
-      text1: 'Sich Ablenken',
-      text2: 'zerreisse ein telefonbuch oder',
-      text3: 'ein Magazin in kleine Stücke...'
+      text1: 'Ich bin gut im Teilen.',
+      text2: 'Ich verbessere mich ständig.',
+      text3: 'Ich fühle mich gut. Ich darf mich gut fühlen.'
     },
     {
-      text1: 'Akzeptieren',
-      text2: 'Schreibe Deine Gedanken und gefühle auf,',
-      text3: 'wie sie Dir grad durch den Kopf gehen...'
+      text1: 'Es gibt keine andere Person, die ich lieber',
+      text2: 'wäre, als ich selbst.',
+      text3: 'Alles, was ich mir wünsche, ist bereits in mir.'
     },   {
-      text1: 'Sich Ablenken',
-      text2: 'Schreibe einen Brief an eine Person, auf die Du wütend bist oder die',
-      text3: 'Dich traurig gemacht hat. Schicke diesen Brief nicht ab...'
+      text1: 'Ich verdiene das Beste.',
+      text2: 'Ich fühle mich besser und besser.',
+      text3: 'Es gibt eine Menge, worauf ich stolz sein kann.'
     },
     {
       text1: 'Sich Ablenken',
@@ -208,20 +208,20 @@ export class RandomSkillsComponent implements OnInit {
     }
     ];
 
-  text1 = 'Sich Ablenken'.split('');
-  text2 = 'Blase Ballons auf und versuche,'.split('');
-  text3 = ' sie so schnell wie möglich zu zerplatzen...'.split('');
+  text1 = 'Ich bin zufrieden'.split('');
+  text2 = 'und glücklich'.split('');
+  text3 = 'mit meinem Leben.'.split('');
 
   animate() {
     this.animationState = false;
     setTimeout(() => {
       this.animationState = true;
     }, 1);
-    this.text1 = this.randomSkills[RandomSkillsComponent.counter].text1.split('');
-    this.text2 = this.randomSkills[RandomSkillsComponent.counter].text2.split('');
-    this.text3 = this.randomSkills[RandomSkillsComponent.counter++].text3.split('');
-    if (RandomSkillsComponent.counter === 36) {
-        RandomSkillsComponent.counter = 0;
+    this.text1 = this.randomSkills[MoreAffirmationsComponent.counter].text1.split('');
+    this.text2 = this.randomSkills[MoreAffirmationsComponent.counter].text2.split('');
+    this.text3 = this.randomSkills[MoreAffirmationsComponent.counter++].text3.split('');
+    if (MoreAffirmationsComponent.counter === 36) {
+      MoreAffirmationsComponent.counter = 0;
     }
   }
 
@@ -239,5 +239,6 @@ export class RandomSkillsComponent implements OnInit {
 
 
   ngOnInit() {}
+
 
 }

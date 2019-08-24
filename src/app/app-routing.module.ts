@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MoreAffirmationsComponent } from './modules/more-support/components/more-affirmations/more-affirmations.component';
 
 const routes: Routes = [
   {
@@ -26,10 +27,10 @@ const routes: Routes = [
   {
     path: 'random-skills',
     loadChildren: () => import('./modules/crisis-mgt/crisis-mgt.module').then(mod => mod.CrisisMgtModule)
-  }
+  },
   // {
   //   path: '**',
-  //   redirectTo: '/home',
+  //   redirectTo: '/welcome',
   //   pathMatch: 'full'
   // }
 ];
