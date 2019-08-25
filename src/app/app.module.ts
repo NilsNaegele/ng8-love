@@ -11,6 +11,8 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+import { CookieModule } from 'ngx-cookie';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -20,9 +22,8 @@ import { LayoutModule } from './modules/layout/layout.module';
 import { CoreModule } from './modules/core/core.module';
 import { SharedModule } from './modules/shared/shared.module';
 import { DbtModule } from './modules/dbt/dbt.module';
-
 import { CrisisMgtModule } from './modules/crisis-mgt/crisis-mgt.module';
-
+import { HeroesModule } from './modules/heroes/heroes.module';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,7 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +46,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MoreSupportModule,
     SharedModule,
     LayoutModule,
+    HeroesModule,
+    CookieModule.forRoot(),
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

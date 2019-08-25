@@ -32,6 +32,11 @@
               "src/assets/css/loading.css",
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/app/modules/heroes/styles"
+              ]
+            },
             "scripts": []
           },
           "configurations": {

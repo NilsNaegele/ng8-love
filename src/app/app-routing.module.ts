@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'random-skills',
     loadChildren: () => import('./modules/crisis-mgt/crisis-mgt.module').then(mod => mod.CrisisMgtModule)
   },
+  {
+    path: 'heroes-liked',
+    loadChildren: () => import('./modules/heroes/heroes.module').then(mod => mod.HeroesModule)
+  },
   // {
   //   path: '**',
   //   redirectTo: '/welcome',

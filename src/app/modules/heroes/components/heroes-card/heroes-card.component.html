@@ -1,0 +1,27 @@
+<mat-card class="hero-card" *ngIf="hero" [@fadeIn]="fadeIn">
+    <mat-card-header>
+        <a mat-card-avatar [routerLink]="hero.default ? [routesConfig.routes.heroes.detail(hero.id)] : []">
+            <img mat-card-avatar [src]="hero.avatarThumbnailUrl" alt="hero avatar">
+        </a>
+    <mat-card-title>
+    <a class="hero-detail-link" [routerLink]="hero.default ? [routesConfig.routes.heroes.detail(hero.id)] : []">
+        {{ hero.name }}
+    </a>
+    </mat-card-title>
+    <mat-card-subtitle>
+        <a class="hero-detail-link" [routerLink]="hero.default ? [routesConfig.routes.heroes.detail(hero.id)] : []">
+            {{ hero.alterEgo }}
+        </a>
+    </mat-card-subtitle>
+    <div class="flex-spacer"></div>
+    <div class="hero-actions">
+        {{ hero.likes }}
+        <mat-icon style="color: red;" class="icon__like--red" (click)="like(hero)">
+            favorite
+        </mat-icon>
+    </div>
+    </mat-card-header>
+    <a class="hero-detail-link" [routerLink]="hero.default ? [routesConfig.routes.heroes.detail(hero.id)] : []">
+        <img mat-card-avatar [defaultImage]="hero.avatarBlurredUrl" [lazyLoad]="hero.avatarUrl" alt="{{ hero.name }} hero image">
+    </a>  
+</mat-card>
