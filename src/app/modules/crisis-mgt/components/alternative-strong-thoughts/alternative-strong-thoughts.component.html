@@ -1,5 +1,10 @@
 <mat-card class="alternative-card fancyMuliFont" [@enter1]>
         <h1>Alternative Gedanken</h1>
+        <button class="motivation-button" (click)="navigateMotivation()" mat-fab color="warn">
+                <i class="material-icons">
+                        arrow_forward
+                </i>
+         </button>
         <h3>Unterstützung beim Finden hilfreicher Gedanken</h3>
         <div [@enter2]>
           <img class="alternative-net" src="http://www.paradisi.de/images_artikel/9/9609_0.jpg" alt="">
@@ -136,11 +141,7 @@
          <img class="alternative-net" src="http://bewusstseinveredeln.de/mediapool/70/703345/resources/big_44788967_0_800-450.jpg" alt="">
         
 
-         <button class="motivation-button" (click)="navigateMotivation()" mat-fab color="warn">
-                <i class="material-icons">
-                        arrow_forward
-                </i>
-         </button>
+ 
          <br>
          <br>
          <br>
