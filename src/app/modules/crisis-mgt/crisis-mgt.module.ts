@@ -9,11 +9,12 @@ import { FocusedMindfulnessComponent } from './components/focused-mindfulness/fo
 import { ImageComponent } from './components/image/image.component';
 import { FlashbackComponent } from './components/flashback/flashback.component';
 import { AlternativeStrongThoughtsComponent } from './components/alternative-strong-thoughts/alternative-strong-thoughts.component';
+import { MotivationComponent } from './components/motivation/motivation.component';
 
 
 
 @NgModule({
-  declarations: [RandomSkillsComponent, CrisisMgtComponent, FocusedMindfulnessComponent, ImageComponent, FlashbackComponent, AlternativeStrongThoughtsComponent],
+  declarations: [RandomSkillsComponent, CrisisMgtComponent, FocusedMindfulnessComponent, ImageComponent, FlashbackComponent, AlternativeStrongThoughtsComponent, MotivationComponent],
   imports: [
     CrisisRoutingModule,
     SharedModule

@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router } from '@angular/router';
+
 import {
         bounceInUpOnEnterAnimation,
         bounceInRightOnEnterAnimation,
         fadeInOnEnterAnimation,
         bounceInLeftOnEnterAnimation } from 'angular-animations';
+
 
 @Component({
   selector: 'app-alternative-strong-thoughts',
@@ -20,10 +23,15 @@ import {
   ]
 })
 export class AlternativeStrongThoughtsComponent implements OnInit {
-  strongThoughts;
-  constructor() { }
+  strongThoughts: any;
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  navigateMotivation() {
+      this.router.navigate(['motivation']);
   }
 
 }
