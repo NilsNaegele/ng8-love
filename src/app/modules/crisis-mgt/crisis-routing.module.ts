@@ -1,3 +1,4 @@
+import { AlternativeStrongThoughtsComponent } from './components/alternative-strong-thoughts/alternative-strong-thoughts.component';
 import { FlashbackComponent } from './components/flashback/flashback.component';
 import { FocusedMindfulnessComponent } from './components/focused-mindfulness/focused-mindfulness.component';
 import { CrisisMgtComponent } from './components/crisis-mgt/crisis-mgt.component';
@@ -24,6 +25,10 @@ const crisisRoutes: Routes = [
   {
     path: 'flashback',
     component: FlashbackComponent
+  },
+  {
+    path: 'alternative-thoughts',
+    component: AlternativeStrongThoughtsComponent
   }
 ];
 

@@ -42,6 +42,10 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['focused-mindfulness']);
   }
 
+  navigateAlternativeStrongThoughts() {
+    this.router.navigate(['alternative-thoughts']);
+  }
+
   navigateFlashback() {
     this.router.navigate(['flashback']);
   }

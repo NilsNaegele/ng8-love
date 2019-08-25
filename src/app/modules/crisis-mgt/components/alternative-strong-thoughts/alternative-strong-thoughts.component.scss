@@ -1,0 +1,52 @@
+.container {
+    margin-top: 8vh;
+    margin: 8vh 5px 8vh;
+    text-align: center;
+  }
+
+  .alternative-card {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .alternative-net {
+    width: 100%;
+}
+
+.alternative-container > * {
+  width: 100%;
+}
+
+
+.mat-alternative-input {
+  width: 96% !important;
+  margin-left: 2px;
+  -ms-word-break: break-all;
+  word-break: break-all;
+
+/* Non standard for WebKit */
+  word-break: break-word;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.motivation-button {
+  float: right;
+}
+
+  @media only screen and (max-width: 480px) {
+
+    .fancyMuliFont {
+        font-family: 'Muli', sans-serif !important;
+        font-size: 25px !important;
+      }
+      .mat-alternative-input {
+        max-width: 88% !important;
+        height: 100%;
+        margin-left: 2px;
+
+    }
+
+  }

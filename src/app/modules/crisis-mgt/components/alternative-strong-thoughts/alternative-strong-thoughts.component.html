@@ -1,0 +1,150 @@
+<mat-card class="alternative-card fancyMuliFont" [@enter1]>
+        <h1>Alternative Gedanken</h1>
+        <h3>Unterstützung beim Finden hilfreicher Gedanken</h3>
+        <div [@enter2]>
+          <img class="alternative-net" src="http://www.paradisi.de/images_artikel/9/9609_0.jpg" alt="">
+        </div>
+      
+        <div [@enter3]>
+          <h3>Filter</h3>
+          <p>
+              Nehme ich gerade nur das Schlechte und Negative wahr? Filtere ich das Gute
+              und Positive heraus? Sehe ich die Situation durch eine gefärbte Brille?
+              Wäre das realistisch?
+          </p>
+        </div>
+      
+        <div [@enter4]>
+             <h3>Gedanken Lesen</h3>
+             <p>
+                 Stelle ich Vermutungen darüber an, was andere Leute denken? Dies sind meine
+                 gedanken, nicht jene der anderen. Gibt es noch eine andere Möglichkeit, die
+                 Situation zu beurteilen? Gehe ich davon aus, dass andere Menschen automatisch wissen,
+                 was ich denke oder fühle? Oder sollte ich meine Gedanken und Gefühle klarer beschreiben?
+             </p>
+        </div>
+        <div [@enter5]>
+               <h3>Hellsehen</h3>
+               <p>
+                   Versuche ich, die Zukunft vorauszusagen? Wie wahrscheinlich ist es, dass wirklich das eintritt,
+                   was ich derzeit vermute oder befürchte?
+               </p>
+         </div>
+         <div [@enter6]>
+               <h3>Vergleichen & Verzweifeln</h3>
+               <p>
+                   Vergleiche ich mich ständig mit anderen? Sind die Ergebnisse meines Vergleichs
+                   einseitig, unfair und vernichtend? Gäbe es einen ausgeglicherenen und hilf-
+                   reicheren Blickwinkel, um die Situation zu betrachten?
+               </p>
+         </div>
+         <div [@enter6]>
+               <h3>Selbstkritik</h3>
+               <p>
+                   Da sind sie wieder, diese abwertenden und verurteilenden Gedanken über mich selbst.
+                   Würden andere Menschen, die mich gut kennen, meine Einschätzung teilen? Was würden sie
+                   stattdessen sagen?
+               </p>
+         </div>
+         <div>
+            <h3>
+                Du solltest und Du müsstest
+            </h3>
+            <p>
+                Stelle ich unmöglich erfüllbare Anforderungen an mich selbst? Was wären realistische Ziele?
+                Gibt es andere Menschen, die unerfüllbare Erwartungen an mich haben?
+                Wäre es nötig, mich klarer auszudrücken, um meine Grenzen mitzuteilen?
+            </p>
+         </div>
+         <div>
+                <h3>Bewertungen</h3>
+                <p>
+                    Wenn wir versuchen, eine Situation oder eine Person zu verstehen, geschieht automatisch
+                    eine persönliche Einschätzung (Interpretation). aber dass heisst nicht, dass diese Einschätzung
+                    zwangsläufig richtig oder hilfreich ist. Gibt es noch andere Möglichkeiten, diese Situation oder
+                    Person zu verstehen? Eine andere Perspektive?
+                </p>
+         </div>
+         <div>
+                    <h3>
+                        Emotionale Beweisführung
+                    </h3>
+                    <p>
+                        Nur weil es mir in diesem  Moment gerade nicht so gut geht, heisst das nicht automatisch,
+                        dass ich selbst, mein Verhalten oder die Situation tatsächlich schlecht wären. Wie wäre
+                        eine realistische Sichtweise - unabhängig davon, ob ich mich gerade gut oder schlecht fühle?
+                    </p>
+         </div>
+         <div>
+                <h3>
+                    Berge und Maulwurfshügel
+                </h3>
+                <p> 
+                    Übertreibe ich das Negative und mache das Positive klein? Überhöhe ich gute Eigenschaftens
+                    anderer und mache mich selbst oder meine positiven eigenschaften nieder? Wie würde eine
+                    aussenstehende Person dies beurteilen?
+                </p>
+     </div>
+     <div>
+            <h3>
+                    Katastrophisieren
+            </h3>
+            <p>
+                    Davon auszugehen, dass prinzipiell und definitiv die schlimmste aller Möglichkeiten
+                    eintreffen wird, ist nicht gerade hilfreich. Was wäre im Gegensatz zu meinen Befürchtungen
+                    die wahrscheinlichste Möglichkeit?
+            </p>
+ </div>
+ <div>
+        <h3>
+                    schwarz-Weiss Denken
+        </h3>
+        <p>
+                Auch wenn es gerade so aussieht - nichts ist ausschliesslich schwarz oder weiss, nur gut
+                oder nur schlecht - es gibt immer jede menge Grau-Schattierungen.
+                Wo auf diesem Spektrum liegt das aktuelle ereignis?     
+        </p>
+</div>
+<div>
+        <h3>
+                Erinnerungen
+        </h3>
+        <p>
+                Erinnerungen aus der Vergangenheit gehören zur Vergangenheit. das war dort und damals.
+                Obwohl manche Erinnerungen auch heute noch starke Emotionen triggern, können, die schwer
+                auszuhalten sind, sind diese Ereignisse teil der Vergangenheit und haben mit dem Jetzt nichts
+                zu tun. Heute bin ich in Sicherheit.
+        </p>
+</div>
+
+        <div>
+            <h1>Stärkende Gedanken</h1>
+            <h3>Füge Deine eigenen stärkenden Gedanken hinzu!</h3>
+            <div class="alternative-container">
+                    <mat-form-field>
+                              <textarea [(ngModel)]="strongThoughts" matInput 
+                      placeholder="Schreibe stärkende Gedanken"></textarea>
+                    </mat-form-field>
+                    <mat-card class="mat-alternative-input">
+                        {{ strongThoughts }}
+                    </mat-card>
+            </div>
+
+
+        </div>
+
+         <img class="alternative-net" src="http://bewusstseinveredeln.de/mediapool/70/703345/resources/big_44788967_0_800-450.jpg" alt="">
+        
+
+         <button class="motivation-button" mat-fab color="warn">
+                <i class="material-icons">
+                        arrow_forward
+                </i>
+         </button>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+    </mat-card>
+
