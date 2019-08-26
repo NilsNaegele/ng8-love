@@ -1,0 +1,24 @@
+@import "../../styles/mixins";
+
+.container {
+  width: 65%;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  margin-top: 2rem;
+}
+
+button {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}

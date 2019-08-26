@@ -2,12 +2,14 @@
     <div fxFlex="10" fxFlex.gt-sm="20"></div>
     <div fxFlex="90" fxFlex.gt-sm="80">
         <h1 class="header__title">
-            Helden am meisten gemocht
+            Möchtest Du eine Heldin sein? Du bist eine Heldin!
         </h1>
         <div id="heroes-list" *ngIf="heroes$ | async as heroes; else loading">
             <ng-container *ngFor="let hero of heroes">
                     <app-heroes-card [hero]="hero"></app-heroes-card>
             </ng-container>
+            <br>
+            <br>
         </div>
         <ng-template #loading>
             Loading

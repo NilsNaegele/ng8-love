@@ -5,7 +5,7 @@ export let ROUTES_CONFIG = new InjectionToken('routes.config');
 
 const basePaths = {
     heroes: 'heroes-list',
-    heroDetail: 'hero-detail'
+    heroDetail: 'superhero-detail'
 };
 
 

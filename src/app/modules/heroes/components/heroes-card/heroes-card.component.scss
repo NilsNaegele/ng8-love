@@ -23,6 +23,11 @@ img {
   height: auto;
 }
 
+.flex-spacer {
+  flex-grow: 1;
+}
+
+
 @media (max-width: 680px) {
   .hero-card {
     width: 80%;

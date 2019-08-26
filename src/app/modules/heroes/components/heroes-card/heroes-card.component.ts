@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie';
 import { Hero } from '../../models/hero';
 import { HeroesService } from '../../services/heroes.service';
-import {fadeIn} from 'ng-animate';
+import { fadeIn } from 'ng-animate';
 import { useAnimation, trigger, transition } from '@angular/animations';
 import { ROUTES_CONFIG } from '../../configs/routes.config';
 
@@ -21,7 +21,7 @@ import { ROUTES_CONFIG } from '../../configs/routes.config';
 })
 export class HeroesCardComponent implements OnInit {
   @Input() hero: Hero;
-
+  fadeIn: any;
   canVote: boolean;
 
 // @Inject(ROUTES_CONFIG) public routesConfig: any

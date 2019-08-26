@@ -17,9 +17,7 @@ import { promise } from 'protractor';
 
 
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class HeroesService {
   private heroesCollection: AngularFirestoreCollection<Hero>;
 
@@ -67,7 +65,7 @@ export class HeroesService {
   getHero(id: string): Observable<any> {
     return this.afs.doc(EndpointsConfig.heroes.detail(id)).get().pipe(
       map((hero) => {
-        return new Hero({id, ...hero.data()});
+        return new Hero({id, ...hero.data});
       }),
       tap(() => LoggerService.log(`fetched hero ${id}`)),
       catchError(HeroesService.handleError('getHero', []))

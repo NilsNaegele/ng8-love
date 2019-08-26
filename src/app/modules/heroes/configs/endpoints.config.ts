@@ -12,5 +12,5 @@ export const EndpointsConfig: any = {
 };
 
 export function getHeroDetail(id) {
-    return `/hero-detail/${id}`;
+    return `/superhero-detail/${id}`;
 }

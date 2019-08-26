@@ -1,1 +1,14 @@
-<p>heroes-detail works!</p>
+<h1 class="header__title">
+        Held Details
+</h1>
+<div class="container" *ngIf="!heroes$ | async">
+        Loading
+</div>
+<div class="container" *ngIf="heroes$ | async as heroes" routerLink="/superheroes-liked" [@fadeIn]="fadeIn">
+    <ng-container *ngFor="let hero of heroes">
+        <app-heroes-card [hero]="hero"></app-heroes-card>
+    </ng-container>
+</div>
+<button aria-label="Go back button" mat-raised-button type="button" (click)="goBack()">
+        Zurück
+</button>

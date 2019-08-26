@@ -3,7 +3,8 @@ import { HeroesListComponent } from './components/heroes-list/heroes-list.compon
 import { HeroesLikedComponent } from './components/heroes-liked/heroes-liked.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HeroesHomeComponent } from './components/heroes-home/heroes-home.component';
+import { HeroesResolverService } from './resolvers/heroes-resolver.service';
+import { HeroesService } from './services/heroes.service';
 
 
 const routes: Routes = [
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'heroes-list', redirectTo: '/superheroes-list' },
   { path: 'superheroes-liked',  component: HeroesLikedComponent },
   { path: 'superheroes-list', component: HeroesListComponent },
-  { path: 'superhero-detail/:id', component: HeroesDetailComponent, data: { animation: 'hero' } }
+  { path: 'superhero-detail/:id', component: HeroesDetailComponent, resolve: { hero: HeroesResolverService} }
   // {
   //       path: 'heroes-liked',
   //       component: HeroesLikedComponent
@@ -29,6 +30,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [ HeroesService, HeroesResolverService ]
 })
 export class HeroesRoutingModule { }
