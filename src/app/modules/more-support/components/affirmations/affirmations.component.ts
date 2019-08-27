@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
+import { zoomInUpAnimation, rotateInOnEnterAnimation } from 'angular-animations';
+
 const AFFIRMATIONS = [
   'AFFIRMATIONS.AFFIRMATION1',
   'AFFIRMATIONS.AFFIRMATION2',
@@ -167,31 +169,41 @@ const AFFIRMATIONS = [
 @Component({
   selector: 'app-affirmations',
   templateUrl: './affirmations.component.html',
-  styleUrls: ['./affirmations.component.scss']
+  styleUrls: ['./affirmations.component.scss'],
+  animations: [
+    rotateInOnEnterAnimation({ anchor: 'enter1', delay: 100 }),
+    zoomInUpAnimation()
+  ]
 })
 export class AffirmationsComponent implements OnInit {
-  private static counter = 0;
+  private static affirmationsCounter = 0;
 
   public color = '';
   public affirmation = '';
+
+  animationState: boolean;
 
   constructor(public translate: TranslateService) { }
 
   ngOnInit() {
     this.affirmation = this.selectRandomAffirmation();
+    this.newAffirmation();
   }
 
   newAffirmation(): void {
     this.affirmation = this.selectRandomAffirmation();
-    // this.color = this.colorList[Math.floor(Math.random() * this.colorList.length)];
     this.color = this.getRandomColor();
+    this.animationState = false;
+    setTimeout(() => {
+      this.animationState = true;
+    }, 1);
   }
 
   selectRandomAffirmation(): string {
-      if (AffirmationsComponent.counter === AFFIRMATIONS.length) {
-        AffirmationsComponent.counter = 0;
+      if (AffirmationsComponent.affirmationsCounter === AFFIRMATIONS.length) {
+        AffirmationsComponent.affirmationsCounter = 0;
       }
-      return AFFIRMATIONS[AffirmationsComponent.counter++];
+      return AFFIRMATIONS[AffirmationsComponent.affirmationsCounter++];
   }
 
 

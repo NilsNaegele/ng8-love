@@ -6,6 +6,13 @@ import {
   animate,
   transition
 } from '@angular/animations';
+
+import {
+  zoomInOnEnterAnimation,
+  zoomInUpOnEnterAnimation,
+  zoomInDownOnEnterAnimation,
+  zoomInRightOnEnterAnimation
+} from 'angular-animations';
 import { Router } from '@angular/router';
 
 @Component({
@@ -19,7 +26,11 @@ import { Router } from '@angular/router';
         style({ transform: 'translateX(-500%)' }),
         animate(1000)
       ])
-    ])
+    ]),
+    zoomInOnEnterAnimation({ anchor: 'enter1', delay: 500 }),
+    zoomInUpOnEnterAnimation({ anchor: 'enter2', delay: 2000 }),
+    zoomInDownOnEnterAnimation({ anchor: 'enter3', delay: 3000 }),
+    zoomInRightOnEnterAnimation({ anchor: 'enter4', delay: 2000 })
   ]
 })
 export class StartComponent {

@@ -1,8 +1,4 @@
-<div class="container">
-        <!-- <div style="margin-right:148px;">
-          <app-angular-img *ngFor="let i of [0,1,2,3,4]" [@enter]="{value: '', params: { delay: i * 150 }}" (@enter.done)="hueState = !hueState"></app-angular-img>
-        </div> -->
-      
+<div class="container" [@enter1]>
         <button [@btnEnter] [@btnEnterFadeIn] mat-stroked-button color="primary" 
         class="animate-btn" (click)="animate()">
         <i class="material-icons" style="color:red;">

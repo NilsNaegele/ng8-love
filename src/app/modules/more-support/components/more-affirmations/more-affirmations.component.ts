@@ -10,7 +10,8 @@ import {
   rubberBandAnimation,
   flashAnimation,
   fadeInOnEnterAnimation,
-  rubberBandOnEnterAnimation
+  rubberBandOnEnterAnimation,
+  rotateInOnEnterAnimation
 } from 'angular-animations';
 
 @Component({
@@ -19,16 +20,17 @@ import {
   styleUrls: ['./more-affirmations.component.scss'],
   animations: [
     rotateInDownLeftOnEnterAnimation({ anchor: 'enter' }),
+    rotateInOnEnterAnimation({ anchor: 'enter1', delay: 1000}),
     zoomInDownOnEnterAnimation({ anchor: 'enterLetterAnim1' }),
     fadeInOnEnterAnimation({ anchor: 'enterLetterAnim2' }),
     zoomInUpOnEnterAnimation({ anchor: 'enterLetterAnim3' }),
     rollInAnimation({ anchor: 'letterAnim1' }),
     zoomInLeftAnimation({ anchor: 'letterAnim2' }),
     rubberBandAnimation({ anchor: 'letterAnim3' }),
-    hueRotateAnimation({ anchor: 'hueLetter', duration: 5000 }),
+    hueRotateAnimation({ anchor: 'hueLetter', duration: 500 }),
     flashAnimation({ anchor: 'flash' }),
-    rubberBandOnEnterAnimation({ anchor: 'btnEnter', delay: 12500 }),
-    fadeInOnEnterAnimation({ anchor: 'btnEnterFadeIn', delay: 12500, duration: 500 })
+    rubberBandOnEnterAnimation({ anchor: 'btnEnter', delay: 2250 }),
+    fadeInOnEnterAnimation({ anchor: 'btnEnterFadeIn', delay: 1250, duration: 500 })
   ]
 })
 export class MoreAffirmationsComponent implements OnInit {

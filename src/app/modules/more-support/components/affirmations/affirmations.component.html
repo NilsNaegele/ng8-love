@@ -1,10 +1,13 @@
 <!-- <mat-card class="affirmations-card">
-    Ich bin zufrieden und glücklich.
+    Ich bin zufrieden und glücklich mit meinem Leben.
 </mat-card> -->
-<div class="affirmations-div" [style.background-color]="color"  (click)="newAffirmation()">
+<div [@enter1] [style.background-color]="color">
+<div class="affirmations-div" [@zoomInUp]="animationState" 
+    (click)="newAffirmation()">
         <mat-card class="affirmations-card mat-elevation-z8">
                 <span class="mat-h2 big fancyMuliFont">
                     {{ affirmation | translate }}
                 </span>
         </mat-card>
+</div>
 </div>

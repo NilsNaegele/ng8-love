@@ -1,10 +1,10 @@
-<mat-tab-group>
+<mat-tab-group [@enter1]>
         <mat-tab>
           <ng-template mat-tab-label>
             <mat-icon class="example-tab-icon">info</mat-icon>
             Informationen
           </ng-template>
-          <mat-card class="example-card">
+          <mat-card class="example-card" [@enter1]>
                 <mat-card-header>
                   <div mat-card-avatar class="example-header-image"></div>
                   <mat-card-title>Informationen zur Borderline-Störung</mat-card-title>
@@ -36,7 +36,7 @@
               </mat-card>
         </mat-tab>
       
-        <mat-tab>
+        <mat-tab >
           <ng-template mat-tab-label>
             <mat-icon class="example-tab-icon">info</mat-icon>
             Störungen in 5 Bereichen

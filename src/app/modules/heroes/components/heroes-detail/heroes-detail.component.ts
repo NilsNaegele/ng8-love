@@ -10,6 +10,11 @@ import { map, defaultIfEmpty } from 'rxjs/operators';
 import { AppConfig } from '../../configs/app.config';
 import { HeroesService } from '../../services/heroes.service';
 
+import {
+  fadeInDownOnEnterAnimation,
+  slideInUpOnEnterAnimation
+} from 'angular-animations';
+
 @Component({
   selector: 'app-heroes-detail',
   templateUrl: './heroes-detail.component.html',
@@ -17,7 +22,9 @@ import { HeroesService } from '../../services/heroes.service';
   animations: [
     trigger('fadeIn', [transition('* => *', useAnimation(fadeIn, {
       params: {timing: 1, delay: 0}
-    }))])
+    }))]),
+    fadeInDownOnEnterAnimation({ anchor: 'enter1', delay: 1000 }),
+    slideInUpOnEnterAnimation({ anchor: 'enter3', delay: 1000 })
   ]
 })
 export class HeroesDetailComponent implements OnInit {
