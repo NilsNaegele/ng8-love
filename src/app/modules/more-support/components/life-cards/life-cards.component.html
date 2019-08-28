@@ -1,0 +1,15 @@
+<div [@enter1] fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px">
+        <mat-card [@enter4] *ngFor="let member of members" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)">
+          <mat-card-header style="text-align: center;">
+            <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>{{member.title}}</mat-card-title>
+              <mat-card-subtitle>{{member.subtitle}}</mat-card-subtitle>
+          </mat-card-header>
+          <img class="image" mat-card-image [src]="member.url" alt="Photo of {{member.title}}">
+          <mat-card-content style="text-align: center;">
+            <p>
+              {{member.content}}
+            </p>
+          </mat-card-content>
+        </mat-card>
+</div>

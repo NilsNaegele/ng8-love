@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AffirmationsComponent } from './components/affirmations/affirmations.component';
 import { MoreAffirmationsComponent } from './components/more-affirmations/more-affirmations.component';
+import { LifeCardsComponent } from './components/life-cards/life-cards.component';
 
 
 const moreSupportRoutes: Routes = [
@@ -20,6 +21,10 @@ const moreSupportRoutes: Routes = [
   {
     path: 'more-affirmations',
     component: MoreAffirmationsComponent
+  },
+  {
+    path: 'life-cards',
+    component: LifeCardsComponent
   }
 ];
 

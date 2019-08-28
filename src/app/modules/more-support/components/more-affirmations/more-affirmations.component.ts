@@ -27,10 +27,10 @@ import {
     rollInAnimation({ anchor: 'letterAnim1' }),
     zoomInLeftAnimation({ anchor: 'letterAnim2' }),
     rubberBandAnimation({ anchor: 'letterAnim3' }),
-    hueRotateAnimation({ anchor: 'hueLetter', duration: 500 }),
+    hueRotateAnimation({ anchor: 'hueLetter', duration: 5000 }),
     flashAnimation({ anchor: 'flash' }),
-    rubberBandOnEnterAnimation({ anchor: 'btnEnter', delay: 2250 }),
-    fadeInOnEnterAnimation({ anchor: 'btnEnterFadeIn', delay: 1250, duration: 500 })
+    rubberBandOnEnterAnimation({ anchor: 'btnEnter', delay: 12250 }),
+    fadeInOnEnterAnimation({ anchor: 'btnEnterFadeIn', delay: 12250, duration: 500 })
   ]
 })
 export class MoreAffirmationsComponent implements OnInit {
