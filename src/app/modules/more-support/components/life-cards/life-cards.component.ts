@@ -49,7 +49,7 @@ export class LifeCardsComponent implements OnInit {
       title: 'Einen Schritt zurückgehen,um weiterzukommen.',
       subtitle: 'Parfois je dois reculer d\'un pas pour que j\'avances.',
       content: 'Sometimes I must step back,to advance further.',
-      url: 'https://guardian.ng/wp-content/uploads/2016/12/One-step-back-two-steps-forward.jpg'},
+      url: 'http://eviaadvisors.com/wp-content/uploads/2016/04/sea-1281780_960_720.jpg'},
     {
       title: 'Erstmal anfangen! Los geht\'s.',
       subtitle: 'Debuter, puis ca marches.',
@@ -208,7 +208,7 @@ export class LifeCardsComponent implements OnInit {
             url: 'https://www.medicalnewstoday.com/content//images/articles/321/321309/socks-with-heart.jpg'},
             {
               title: 'Ich bin schon ganz OK.',
-              subtitle: 'je suis OK.',
+              subtitle: 'Je suis OK.',
               content: 'I am pretty OK.',
               // tslint:disable-next-line: max-line-length
               url: 'https://www.first-academy.de/wp-content/uploads/2013/04/Fotolia_88044077_Subscription_Monthly_M.jpg'},
@@ -224,7 +224,124 @@ export class LifeCardsComponent implements OnInit {
                   content: 'I dance as if nobody is watching.',
                   // tslint:disable-next-line: max-line-length
                   url: 'https://qph.fs.quoracdn.net/main-qimg-995e1689eea9b8780e0d000d2e2f6101.webp'},
-              ];
+                  {
+                    title: 'Ich verabrede mich.',
+                    subtitle: 'Je prends un Rdv',
+                    content: 'I am going on a date.',
+                    // tslint:disable-next-line: max-line-length
+                    url: 'https://www.mantelligence.com/wp-content/uploads/2018/08/what-to-do-on-a-first-date-main.jpg'},
+                  {
+                    title: 'Plan A, das ziehe ich jetzt durch.',
+                    subtitle: 'Plan A, j\'y vais jus ce qu\'au bout.',
+                    content: 'Plan A, I will push through to completion.',
+                    // tslint:disable-next-line: max-line-length
+                    url: 'http://www.vllc.com.au/uploads/3/0/3/7/30371177/woman-imagining_orig.jpg'},
+                  {
+                    title: 'Ich nehme mir eine Auszeit.',
+                  subtitle: 'Je prends de vacances.',
+                  content: 'I will take a vacation.',
+                  // tslint:disable-next-line: max-line-length
+                  url: 'https://sites.google.com/a/saddlebrookschools.org/fl_dream_vacation/_/rsrc/1456504995669/home/beach.jpg'},
+                  {
+                  title: 'Du gehörst dazu.',
+                  subtitle: 'Tu y fait partie.',
+                  content: 'You are a part of it.',
+                  url: 'https://talk.sonymobile.com/t5/image/serverpage/image-id/32281iE41D0FBF2B5FB101?v=1.0'},
+                  {
+                    title: 'Ich bin jetzt in Sicherheit, alles ist gut.',
+                    subtitle: 'J\'y suis en securite. Tout va bien.',
+                    content: 'I am safe. Everything is well.',
+                    // tslint:disable-next-line: max-line-length
+                    url: 'https://jacrblog.org/images/easyblog_articles/285/GettyImages-169937958.jpg'},
+                  {
+                    title: 'Alles zu seiner Zeit.',
+                    subtitle: 'Tout a son temps.',
+                    content: 'Everything at it\'s time..',
+                    url: 'https://img.vidible.tv/prod/2019-03/25/5c9955ad41aecf37f744ef74/5c99561f2504206e604e5165_o_U_v1.jpg'},
+                  {
+                    title: 'Ich plane meinen Tag.',
+                    subtitle: 'Je planifie ma journee.',
+                    content: 'I plan my day.',
+                    url: 'https://projectlifemastery.com/wp-content/uploads/2014/01/tips-for-achieving-your-goals-1280x720.jpg'},
+                  {
+                    title: 'Ich muss nicht von jedem gemocht werden.',
+                    subtitle: 'Je ne dois pas etre aimer par tout le monde.',
+                    content: 'I don\'t have to be liked by everybody.',
+                    // tslint:disable-next-line: max-line-length
+                    url: 'http://images.summitmedia-digital.com/cosmo/images/2018/04/03/main-guess-what-not-everyone-likes-to-share-food-and-heres-why-1522718243.jpg'},
+                  {
+                    title: 'Nein ist ein ganzer Satz.',
+                    subtitle: 'Non est une phrase complete.',
+                    content: 'No is a full sentence.',
+                    url: 'https://www.rachelsimmons.com/wp-content/uploads/2015/08/No.jpg'},
+                  {
+                    title: 'Ich brauche nicht die Erwartungen anderer erfüllen.',
+                    subtitle: 'je n\'ai pas a satifaire les attentes des autres.',
+                    content: 'I don\'t have to fulfill the expectations of the others.',
+                    url: 'https://cdn-images-1.medium.com/max/2560/1*vwHByqyQ_yy3PJmOQdaGDg.jpeg'},
+                  {
+                    title: 'Ich HABE etwas beizutragen. Ich bin talentiert.',
+                    subtitle: 'J\'ai de quoi a contribuer, je suis talentuex.',
+                    content: 'I have something to contribute, I am talented.',
+                    // tslint:disable-next-line: max-line-length
+                    url: 'https://media.playmobil.com/i/playmobil/70031_product_detail/Rockstar?locale=de-DE,de,*&$pdp_product_zoom_xl$&strip=true&qlt=80&fmt.jpeg.chroma=1,1,1&unsharp=0,1,1,7&fmt.jpeg.interlaced=true'},
+                  {
+                    title: 'Ich befreie mich von altem Ballast.',
+                    subtitle: 'Je me debarasse des dechets.',
+                    content: 'I free myself from old stuff.',
+                    url: 'https://cdn.pixabay.com/photo/2018/07/19/22/34/heart-3549572_960_720.jpg'},
+                  {
+                    title: 'Ich finde meinen Platz.',
+                    subtitle: 'J\'e prends ma place.',
+                    content: 'I take my place in society.',
+                    // tslint:disable-next-line: max-line-length
+                    url: 'https://miro.medium.com/max/1200/1*W7B7Qby8SevTqG70PvIuyg.jpeg'},
+                  {
+                    title: 'Wenn es so nicht geht, probiere es anders.',
+                    subtitle: 'Si ca marches pas comme ca, je fais autrement.',
+                    content: 'If it doesn\'t work that way, do it differently.',
+                    url: 'https://i1.wp.com/mxvice-en.com/wp-content/uploads/2017/04/Site-Jeffrey-Herlings-4.jpg'},
+                  {
+                    title: 'Was würde mir jetzt gut tun?',
+                    subtitle: 'Que\'est-ce qui me fera du bien maintenant?',
+                    content: 'What would do me well, now?',
+                    // tslint:disable-next-line: max-line-length
+                    url: 'https://madisonpsychiatricassociates.com/wp-content/uploads/2018/08/Screen-Shot-2018-08-29-at-10.44.37-AM-1400x793.png'},
+                  {
+                    title: 'Was würde ich jetzt meiner bester Freundin raten?',
+                    subtitle: 'Qu\'est-ce que je conseillerai a ma meilleure copine?',
+                    content: 'What would I advise my best friend to do?',
+                    url: 'https://www.jesuit.ie/wp-content/uploads/2016/12/jeslib-01.jpg'},
+                  {
+                    title: 'Ich schaffe mir Raum.',
+                    subtitle: 'Je me fait de la place.',
+                    content: 'I make room for myself.',
+                    url: 'https://netzwerk-lebensraum.de/wp-content/uploads/2019/02/cropped-Neu.jpg'},
+                    {
+                      title: 'Vor wem verantworte ich mich eigentlich? Ich.',
+                      subtitle: 'De qui est-ce que je me repsonsabilise? Moi.',
+                      content: 'In front of whom do I responsibilize myself? Me.',
+                      // tslint:disable-next-line: max-line-length
+                      url: 'https://www.welt.de/img/wissenschaft/mobile101235271/4522500027-ci102l-w1024/tiger-sumatra-DW-Wissenschaft-Frankfurt-Main-jpg.jpg'},
+                      {
+                        title: 'Heute habe ich eine wichtige Verabredung mit mir selbst.',
+                        subtitle: 'Today I have an important date with myself.',
+                        content: 'Aujourd\'hui j\'ai un RDV important avec moi.',
+                        // tslint:disable-next-line: max-line-length
+                        url: 'http://c1.peakpx.com/wallpaper/331/877/97/sign-love-sign-hands-love-sunset-wallpaper.jpg'},
+                        {
+                          title: 'Heute bin ich nicht erreichbar.',
+                          subtitle: 'Aujourd\'hui je suis pas joignable.',
+                          content: 'Today I am not reachable.',
+                          // tslint:disable-next-line: max-line-length
+                          url: 'https://www.tripsavvy.com/thmb/3DIiK4HxvOxRTYo0hnp8pePHyxo=/2121x1414/filters:fill(auto,1)/man-in-hammock-near-mountains-5c1d06bd46e0fb00017d73f8.jpg'},
+                          {
+                            title: 'Ich lerne noch.',
+                            subtitle: 'J\'apprends encore.',
+                            content: 'I am still learning.',
+                            // tslint:disable-next-line: max-line-length
+                            url: 'https://www.thecplinstitute.ie/wp-content/uploads/2016/10/Continuous-Learning-Journey-1.jpg'},
+                        ];
 
   constructor() { }
 
