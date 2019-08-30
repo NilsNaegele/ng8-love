@@ -319,7 +319,7 @@ export class LifeCardsComponent implements OnInit {
                     url: 'https://netzwerk-lebensraum.de/wp-content/uploads/2019/02/cropped-Neu.jpg'},
                     {
                       title: 'Vor wem verantworte ich mich eigentlich? Ich.',
-                      subtitle: 'De qui est-ce que je me repsonsabilise? Moi.',
+                      subtitle: 'De qui est-ce que je me responsabilise? Moi.',
                       content: 'In front of whom do I responsibilize myself? Me.',
                       // tslint:disable-next-line: max-line-length
                       url: 'https://www.welt.de/img/wissenschaft/mobile101235271/4522500027-ci102l-w1024/tiger-sumatra-DW-Wissenschaft-Frankfurt-Main-jpg.jpg'},
@@ -341,7 +341,88 @@ export class LifeCardsComponent implements OnInit {
                             content: 'I am still learning.',
                             // tslint:disable-next-line: max-line-length
                             url: 'https://www.thecplinstitute.ie/wp-content/uploads/2016/10/Continuous-Learning-Journey-1.jpg'},
-                        ];
+                            {
+                              title: 'Ich lerne das GUTE wahrzunehmen.',
+                              subtitle: 'J\'apprends a percevoir le BON.',
+                              content: 'I learn to perceive the GOOD.',
+                              // tslint:disable-next-line: max-line-length
+                              url: 'http://3.bp.blogspot.com/-K0PmfmVYgOs/VIBuX_zoanI/AAAAAAAABHM/9goU2NKlXEc/s1600/Double-alaskan-rainbow.jpg'},
+                              {
+                                title: 'Ich gebe Bedeutung und schaffe Wirklichkeit.',
+                                subtitle: 'Je donnes de la signification et creer la realite.',
+                                content: 'I give reason and create reality.',
+                                // tslint:disable-next-line: max-line-length
+                                url: 'https://specials-images.forbesimg.com/imageserve/5d3144097ed2c70009a2c3a1/960x0.jpg?cropX1=916&cropX2=4248&cropY1=304&cropY2=2180'},
+                              {
+                                title: 'Ich halte inne und spüre meinen Atem.',
+                                subtitle: 'J\'arrete et sent ma haleine.',
+                                content: 'I hold back and feel my breath.',
+                                // tslint:disable-next-line: max-line-length
+                                url: 'https://yogadigest.com/wp-content/uploads/2017/01/breath-770x439_c.jpeg'},
+                              {
+                                title: 'Ich beginne wo ich bin.',
+                              subtitle: 'Ich gebrauche was ich habe.',
+                              content: 'ich tue was ich kann.',
+                              // tslint:disable-next-line: max-line-length
+                              url: 'https://www.unitypaloalto.org/wp-content/uploads/LoveLiftedUp.jpg'},
+                              {
+                              title: 'Es ist nicht meine Schuld.',
+                              subtitle: 'Je ne suis pas coupable.',
+                              content: 'I am not to blame.',
+                              url: 'http://view.stern.de/de/picture/2981576/katze-kater-jung-noch-unschuldig-940.jpg'},
+                              {
+                                title: 'Ein Schritt nach dem anderen.',
+                                subtitle: 'Un pas apres l\'autre.',
+                                content: 'One step after the other.',
+                                // tslint:disable-next-line: max-line-length
+                                url: 'https://www.chasebrexton.org/sites/default/files/Stair%20Climbing.jpg'},
+                              {
+                                title: 'Wenn ich hinfalle, stehe ich wieder auf.',
+                                subtitle: 'Quand je tombes, je me releve.',
+                                content: 'When I fall, I get back up.',
+                                // tslint:disable-next-line: max-line-length
+                                url: 'https://www.publishousnow.com/wp-content/uploads/2017/11/setting-goals-acheiving-growth-1080x675.jpeg'},
+                              {
+                                title: 'Ich mache mal was Neues.',
+                                subtitle: 'Je fais quelque chose de nouveau.',
+                                content: 'I do something new.',
+                                // tslint:disable-next-line: max-line-length
+                                url: 'http://www.bsd111.org/docs/_full_/district/news%20pictures/dance.gif?id=10411&thumbwidth=190&fullwidth=500'},
+                              {
+                                title: 'Wenn mein Herz spricht dann schreibe ich mit.',
+                                subtitle: 'Quand mon coeurs parle, j\'ecrits.',
+                                content: 'When my heart speaks, I write along.',
+                                // tslint:disable-next-line: max-line-length
+                                url: 'https://www.lovedignity.com/wp-content/uploads/2014/11/Love-Letter-Heart.jpg'},
+                              {
+                                title: 'Anerkennung tut gut.',
+                                subtitle: 'La reconnaissance fait du bien.',
+                                content: 'Being appraised feels good.',
+                                url: 'http://www.stil.de/uploads/pics/iStock_000049244560_andresr.jpg'},
+                              {
+                                title: 'Ich nehme mir die Zeit die ich brauche.',
+                                subtitle: 'Je prends le temps qu\'il me faut.',
+                                content: 'I take the time I need.',
+                                // tslint:disable-next-line: max-line-length
+                                url: 'https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/BTrHt7uCiu335hjs/videoblocks-young-girl-swinging-on-a-swing-on-the-beach-tropical-island-peaceful-sea-view-hd-slowmotion-koh-phangan-thailand_bea4taspe_thumbnail-full01.png'},
+                              {
+                                title: 'LEBEN ist jetzt.',
+                                subtitle: 'La VIE est maintenant.',
+                                content: 'LIFE is now.',
+                                // tslint:disable-next-line: max-line-length
+                                url: 'https://miro.medium.com/max/10368/1*uhIFSefDRrOU3keaAvsL1Q.jpeg'},
+                              {
+                                title: 'Bewegung macht glücklich.',
+                                subtitle: 'Mouvement rend heureux.',
+                                content: 'Exercise makes happy.',
+                                url: 'https://prod.static9.net.au/_/media/2016/06/29/12/21/160629coachexercise.jpg'},
+                                {
+                                  title: 'Ich höre erst mal zu wenn ich andere verstehen will.',
+                                  subtitle: 'J\'ecoutes avant, si je veux comprendre les autres.',
+                                  content: 'I first listen, if I want to understand the others.',
+                                  // tslint:disable-next-line: max-line-length
+                                  url: 'https://i0.wp.com/www.ujasiriamali.co.tz/wp-content/uploads/2018/04/listening.png?resize=1280%2C640&ssl=1'}
+                              ];
 
   constructor() { }
 
