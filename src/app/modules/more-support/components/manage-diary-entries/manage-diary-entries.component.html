@@ -1,0 +1,68 @@
+<div class="bounds">
+    
+    <div class="content" 
+         fxLayout="row" 
+         fxLayout.xs="column" 
+         fxFlexFill >
+         
+        <div fxFlex="50" class="section1" fxFlex.xs="50">
+            <mat-card class="diary-card">    
+                <form [formGroup]="diaryForm" (ngSubmit)="save()">
+                              <table class="example-full-width" cellspacing="0">
+                                <tr>
+                                    <td>
+                                    <mat-form-field class="example-full-width">
+                                    <input matInput [matDatepicker]="picker" formControlName="date" placeholder="Datum wählen">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker touchUi #picker></mat-datepicker>
+                                    </mat-form-field>
+                                    </td>
+                                </tr> 
+                                <tr>
+                                <td><mat-form-field class="example-full-width">
+                                  <input matInput placeholder="Der Titel deines Eintrages" formControlName="title">
+                                </mat-form-field></td>
+                              </tr>
+                            </table>
+                              <p>
+                                <mat-form-field class="example-full-width">
+                                  <textarea matInput placeholder="Der Inhalt deines Eintrages" formControlName="content"></textarea>
+                                </mat-form-field>
+                              </p>
+                              <button mat-raised-button color="warn">Speichern</button>    
+                </form>
+                </mat-card>
+        </div>
+        <div fxFlex="50" class="section2" fxFlex.xs="10">
+            <mat-card>
+                <table class="example-full-width" cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Likes</th>
+                      <th>Löschen</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let entry of diaryEntries$ | async">
+                      <td style="text-align: center;">
+                          {{ entry.title }}
+                      </td>
+                      <td style="text-align: center;">
+                          {{ entry.likes }}
+                      </td>
+                      <td style="text-align: center;">
+                          <button (click)="remove(entry.id)" mat-icon-button>
+                              <mat-icon>clear</mat-icon>
+                      </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+            
+            </mat-card> 
+        </div>
+        
+    </div>
+    
+  </div>

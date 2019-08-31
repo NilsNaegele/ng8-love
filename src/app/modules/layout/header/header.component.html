@@ -6,6 +6,12 @@
     <button mat-icon-button [mat-menu-trigger-for]="lanMenu">
                 <mat-icon>language</mat-icon>
    </button>
+   <button mat-icon-button *ngIf="isWellLived" routerLink="/manage-diary-entries" routerLinkActive="active">
+    <mat-icon>star</mat-icon>
+    </button>
+    <button mat-icon-button *ngIf="isViewDiaryEntry" routerLink="/manage-diary-entries" routerLinkActive="active">
+        <mat-icon>arrow_back</mat-icon>
+        </button>
     <span class="space-between"></span>
     <button mat-icon-button [mat-menu-trigger-for]="menu">
         <mat-icon>more_vert</mat-icon>

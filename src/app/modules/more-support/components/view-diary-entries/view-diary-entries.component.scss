@@ -1,0 +1,39 @@
+.center {
+    text-align: center;
+}
+
+.text-define {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.fill {
+    flex: 1;
+}
+
+// .mat-card-image {
+//     width:465px; 
+//     height:297px;
+// }
+
+.diary-card {
+    width: 90%;
+    height: 90%;
+  }
+
+@media only screen and (max-width: 480px) {
+    .mat-card-image {
+        width: 355px; 
+        height: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 1280px) {
+    .mat-card-image {
+        width: 407px;  
+        height: 250px;
+    }
+    .center {
+        font-size: 16px;
+    }
+  }

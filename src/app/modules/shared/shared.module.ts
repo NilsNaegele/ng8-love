@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import {MAT_DATE_LOCALE} from '@angular/material';
+
 import { MatDividerModule } from '@angular/material/divider';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -13,7 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
-import { MatOptionModule } from '@angular/material/core';
+import { MatOptionModule, MatNativeDateModule } from '@angular/material/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
@@ -34,7 +36,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatRippleModule } from '@angular/material/core';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
-
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
@@ -45,8 +47,10 @@ import { PicturesComponent } from './components/pictures/pictures.component';
 import { GratitudeComponent } from './components/gratitude/gratitude.component';
 import { ValidationComponent } from './components/validation/validation.component';
 import { ValidationBottomSheetComponent } from './components/validation-bottom-sheet/validation-bottom-sheet.component';
+// tslint:disable-next-line: max-line-length
 import { ValidationRelationshipsComponent } from './components/validation-bottom-sheet/validation-relationships/validation-relationships.component';
 import { ValidationEmotionsComponent } from './components/validation-bottom-sheet/validation-emotions/validation-emotions.component';
+// tslint:disable-next-line: max-line-length
 import { ValidationStressToleranceComponent } from './components/validation-bottom-sheet/validation-stress-tolerance/validation-stress-tolerance.component';
 import { ValidationSelfComponent } from './components/validation/validation-self/validation-self.component';
 import { ValidationOthersComponent } from './components/validation/validation-others/validation-others.component';
@@ -89,7 +93,9 @@ const SHARED_MODULES = [
   MatExpansionModule,
   MatRippleModule,
   MatTreeModule,
-  MatBottomSheetModule
+  MatBottomSheetModule,
+  MatDatepickerModule,
+  MatNativeDateModule
 ];
 
 const SHARED_COMPONENTS = [
@@ -111,6 +117,7 @@ const SHARED_COMPONENTS = [
     ValidationGetComponent ],
   imports: [...SHARED_MODULES, SharedRoutingModule, TranslateModule ],
   exports: [...SHARED_MODULES, ...SHARED_COMPONENTS, TranslateModule],
+  providers: [{ provide: MAT_DATE_LOCALE, useValue: 'de' }],
   entryComponents: [
     WelcomeDialogComponent,
     ValidationBottomSheetComponent,

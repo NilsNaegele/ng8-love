@@ -20,7 +20,7 @@ import {
 })
 export class LifeCardsComponent implements OnInit {
 
-  members: {title: string, subtitle: string, content: string, url: string}[] = [
+  lifeCards: {title: string, subtitle: string, content: string, url: string}[] = [
     {
       title: 'Wer loslässt hat die Hände frei für Neues...',
       subtitle: 'Celui qui lache prise a les mains libres pour du nouveaux...',

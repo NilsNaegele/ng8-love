@@ -8,11 +8,14 @@ import { MoreAffirmationsComponent } from './components/more-affirmations/more-a
 import { MoreSupportComponent } from './components/more-support/more-support.component';
 import { LifeCardsComponent } from './components/life-cards/life-cards.component';
 import { LiveWellComponent } from './components/live-well/live-well.component';
+import { ManageDiaryEntriesComponent } from './components/manage-diary-entries/manage-diary-entries.component';
+import { ViewDiaryEntriesComponent } from './components/view-diary-entries/view-diary-entries.component';
 
 
 
 @NgModule({
-  declarations: [ AffirmationsComponent, MoreAffirmationsComponent, MoreSupportComponent, LifeCardsComponent, LiveWellComponent ],
+  // tslint:disable-next-line: max-line-length
+  declarations: [ AffirmationsComponent, MoreAffirmationsComponent, MoreSupportComponent, LifeCardsComponent, LiveWellComponent, ManageDiaryEntriesComponent, ViewDiaryEntriesComponent ],
   imports: [
     MoreSupportRoutingModule,
     SharedModule

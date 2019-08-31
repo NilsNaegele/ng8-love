@@ -1,71 +1,26 @@
-[debug] [2019-08-31T16:35:19.031Z] ----------------------------------------------------------------------
-[debug] [2019-08-31T16:35:19.033Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nils\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2019-08-31T16:35:19.034Z] CLI Version:   7.2.4
-[debug] [2019-08-31T16:35:19.034Z] Platform:      win32
-[debug] [2019-08-31T16:35:19.034Z] Node Version:  v10.16.3
-[debug] [2019-08-31T16:35:19.039Z] Time:          Sat Aug 31 2019 18:35:19 GMT+0200 (GMT+02:00)
-[debug] [2019-08-31T16:35:19.040Z] ----------------------------------------------------------------------
+[debug] [2019-08-31T20:35:21.494Z] ----------------------------------------------------------------------
+[debug] [2019-08-31T20:35:21.497Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nils\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-08-31T20:35:21.497Z] CLI Version:   7.2.4
+[debug] [2019-08-31T20:35:21.497Z] Platform:      win32
+[debug] [2019-08-31T20:35:21.497Z] Node Version:  v10.16.3
+[debug] [2019-08-31T20:35:21.499Z] Time:          Sat Aug 31 2019 22:35:21 GMT+0200 (GMT+02:00)
+[debug] [2019-08-31T20:35:21.499Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-08-31T16:35:19.052Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-08-31T16:35:19.053Z] > authorizing via signed-in user
-[debug] [2019-08-31T16:35:19.053Z] [iam] checking project ng8-love for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2019-08-31T16:35:19.056Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-08-31T16:35:19.057Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2019-08-31T20:35:21.510Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-31T20:35:21.511Z] > authorizing via signed-in user
+[debug] [2019-08-31T20:35:21.512Z] [iam] checking project ng8-love for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-08-31T20:35:21.513Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-31T20:35:21.514Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2019-08-31T16:35:19.289Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-31T16:35:19.302Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng8-love:testIamPermissions  
+[debug] [2019-08-31T20:35:21.756Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-31T20:35:21.768Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ng8-love:testIamPermissions  
 
-[debug] [2019-08-31T16:35:20.178Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-31T16:35:20.185Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng8-love  
+[debug] [2019-08-31T20:35:22.632Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-31T20:35:22.639Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng8-love  
  
-[debug] [2019-08-31T16:35:20.550Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-31T20:35:22.971Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'ng8-love'...
 [info] 
 [info] i  deploying firestore, functions, hosting
 [info] Running command: npm --prefix "$RESOURCE_DIR" run lint
-[info] +  functions: Finished running predeploy script.
-[info] i  firestore: checking firestore.rules for compilation errors...
-[info] i  firestore: reading indexes from firestore.indexes.json...
-[debug] [2019-08-31T16:35:26.305Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/ng8-love:test  
-
-[debug] [2019-08-31T16:35:27.133Z] <<< HTTP RESPONSE 200
-[info] +  firestore: rules file firestore.rules compiled successfully
-[debug] [2019-08-31T16:35:27.138Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase serve --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "8"
-  },
-  "dependencies": {
-    "firebase-admin": "^8.0.0",
-    "firebase-functions": "^3.1.0"
-  },
-  "devDependencies": {
-    "eslint": "^5.12.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "firebase-functions-test": "^0.1.6"
-  },
-  "private": true
-}
-[info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2019-08-31T16:35:27.141Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/ng8-love/services/cloudfunctions.googleapis.com  
- 
-[debug] [2019-08-31T16:35:27.142Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/ng8-love/services/runtimeconfig.googleapis.com  
- 
-[debug] [2019-08-31T16:35:28.074Z] <<< HTTP RESPONSE 200
-[info] +  functions: all necessary APIs are enabled
-[debug] [2019-08-31T16:35:28.081Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-31T16:35:28.083Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ng8-love/adminSdkConfig  
- 
-[debug] [2019-08-31T16:35:28.331Z] <<< HTTP RESPONSE 200
-[debug] [2019-08-31T16:35:28.333Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/ng8-love/versions  
-

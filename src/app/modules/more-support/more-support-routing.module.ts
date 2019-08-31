@@ -1,3 +1,5 @@
+import { ViewDiaryEntriesComponent } from './components/view-diary-entries/view-diary-entries.component';
+import { ManageDiaryEntriesComponent } from './components/manage-diary-entries/manage-diary-entries.component';
 import { LiveWellComponent } from './components/live-well/live-well.component';
 import { MoreSupportComponent } from './components/more-support/more-support.component';
 import { NgModule } from '@angular/core';
@@ -30,6 +32,14 @@ const moreSupportRoutes: Routes = [
   {
     path: 'live-well',
     component: LiveWellComponent
+  },
+  {
+    path: 'manage-diary-entries',
+    component: ManageDiaryEntriesComponent
+  },
+  {
+    path: 'view-diary-entries',
+    component: ViewDiaryEntriesComponent
   }
 ];
 
