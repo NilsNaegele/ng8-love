@@ -1,0 +1,17 @@
+<div fxFlex fxLayout="column" fxLayoutGap="10px" style="height: 100vh">
+    <div fxLayout="row wrap">
+        <div *ngFor="let card of cardList" fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column"
+            style="padding: 5px;">
+            <mat-card class="mat-elevation-z8">
+                <img mat-card-image [src]="card.imgSrc" />
+                <mat-card-title class="center"> {{ card.title }} </mat-card-title>
+                <mat-card-content class="center"> {{ card.description }} </mat-card-content>
+                <mat-card-footer>
+                    <button fxFlex mat-flat-button color="accent">
+                        {{ card.button }}
+                    </button>
+                </mat-card-footer>
+            </mat-card>
+        </div>
+    </div>
+</div>

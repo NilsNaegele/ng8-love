@@ -1,3 +1,4 @@
+import { LiveWellComponent } from './components/live-well/live-well.component';
 import { MoreSupportComponent } from './components/more-support/more-support.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -25,6 +26,10 @@ const moreSupportRoutes: Routes = [
   {
     path: 'life-cards',
     component: LifeCardsComponent
+  },
+  {
+    path: 'live-well',
+    component: LiveWellComponent
   }
 ];
 

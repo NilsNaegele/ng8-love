@@ -1,0 +1,25 @@
+.center {
+    text-align: center;
+}
+
+.mat-card-image {
+    width:465px; 
+    height:297px;
+}
+
+@media only screen and (max-width: 480px) {
+    .mat-card-image {
+        width: 355px; 
+        height: 200px;
+    }
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 1280px) {
+    .mat-card-image {
+        width: 407px;  
+        height: 250px;
+    }
+    .center {
+        font-size: 16px;
+    }
+  }

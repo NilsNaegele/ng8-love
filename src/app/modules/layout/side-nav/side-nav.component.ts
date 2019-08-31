@@ -1,7 +1,9 @@
+import { LoginComponent } from './../../core/login/login.component';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { TranslateService } from '@ngx-translate/core';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-side-nav',
@@ -50,7 +52,20 @@ export class SideNavComponent implements OnInit {
     this.router.navigate(['flashback']);
   }
 
-  constructor(private router: Router, public translate: TranslateService) { }
+  openDialog() {
+    const dialogRef = this.matDialog.open(LoginComponent, {
+      width: '500px',
+      // data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  constructor(private router: Router,
+    public translate: TranslateService,
+    private matDialog: MatDialog) { }
 
   ngOnInit() {
   }
