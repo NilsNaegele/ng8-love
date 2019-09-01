@@ -13,6 +13,12 @@
         <mat-icon>arrow_back</mat-icon>
         </button>
     <span class="space-between"></span>
+    <button *ngIf="!isLoggedIn" mat-icon-button (click)="openLogin()">
+            <mat-icon>account_circle</mat-icon>
+    </button>
+    <button *ngIf="isLoggedIn" mat-icon-button (click)="signout()">
+            <mat-icon>power_settings_new</mat-icon>
+    </button>
     <button mat-icon-button [mat-menu-trigger-for]="menu">
         <mat-icon>more_vert</mat-icon>
     </button>

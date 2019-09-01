@@ -1,3 +1,4 @@
+import { MatDialog } from '@angular/material/dialog';
 import { Component, OnInit } from '@angular/core';
 
 import { TranslateService } from '@ngx-translate/core';
@@ -5,6 +6,9 @@ import { TranslateService } from '@ngx-translate/core';
 import { SideNavService } from '../../shared/services/side-nav.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { LoginComponent } from '../../core/components/login/login.component';
+import { AuthService } from '../../core/services/auth.service';
+import { SnackBarService } from '../../core/services/snack-bar.service';
 
 
 @Component({
@@ -15,6 +19,7 @@ import { filter } from 'rxjs/operators';
 export class HeaderComponent implements OnInit {
   isWellLived: boolean;
   isViewDiaryEntry: boolean;
+  isLoggedIn: boolean;
 
   selectedLanguage: string;
 
@@ -23,21 +28,27 @@ export class HeaderComponent implements OnInit {
     this.sideNavService.toggle();
     }
 
-  constructor(private router: Router,
+  constructor(private authService: AuthService,
+              private router: Router,
+              private matDialog: MatDialog,
               public translate: TranslateService,
               private sideNavService: SideNavService) {
     translate.addLangs(['en', 'de', 'fr']);
     translate.setDefaultLang('de');
     translate.use('de');
     this.selectedLanguage = 'de';
-
-    // router.events.subscribe((url: any) => {
-    //   console.log(router.url);
-    // });
-    router.events.pipe(
+      this.authService.getAuth().subscribe((user) => {
+        // console.log('USER', user);
+        if (user) {
+          this.isLoggedIn = true;
+        } else {
+          this.isLoggedIn = false;
+        }
+    });
+    this.router.events.pipe(
       filter((event: any) => event instanceof NavigationEnd)
   ).subscribe(event => {
-          console.log(event.url);
+          // console.log(event.url);
           if (event.url === '/live-well') {
             this.isWellLived = true;
           } else {
@@ -55,6 +66,21 @@ export class HeaderComponent implements OnInit {
     localStorage.setItem('selectedLanguage', language);
     this.translate.use(language);
     this.selectedLanguage = language;
+  }
+
+  openLogin() {
+    const dialogRef = this.matDialog.open(LoginComponent, {
+      width: '500px',
+      // data: {}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
+
+  signout() {
+    this.authService.signOut();
   }
 
 }

@@ -1,0 +1,69 @@
+<mat-card *ngIf="newUser">
+        <mat-card-title class="center">Registrieren</mat-card-title>
+            <mat-slider (change)="toggleForm()"></mat-slider>Anmelden?
+  <mat-card-content>
+    <form class="login-form" [formGroup]="userForm" (ngSubmit)="signup()">
+      <p>
+        <mat-form-field class="login-full-width">
+          <input type="email" matInput placeholder="Deine Email..." formControlName="email" required>
+          <mat-error *ngIf="formErrors.email">
+              {{ formErrors.email }}
+            </mat-error>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field class="login-full-width">
+          <input type="password" matInput placeholder="Passwort" 
+          formControlName="password" required>
+          <mat-error *ngIf="formErrors.password">
+              {{ formErrors.password }}
+            </mat-error>
+        </mat-form-field>
+      </p>
+
+      <div class="button">
+        <button type="submit" mat-raised-button color="accent" 
+        [disabled]="!userForm.valid" mat-button>OK</button>
+      </div>
+
+      <span *ngIf="userForm.valid">Dateneingabe ist gültig</span>
+
+    </form>
+  </mat-card-content>
+</mat-card>
+
+<mat-card *ngIf="!newUser">
+    <mat-card-title class="center">Anmelden</mat-card-title>
+    <mat-slider (change)="toggleForm()"></mat-slider>Registrieren?
+<mat-card-content>
+<form class="login-form" [formGroup]="userForm" (ngSubmit)="login()">
+  <p>
+    <mat-form-field class="login-full-width">
+      <input type="email" matInput placeholder="Deine Email..." formControlName="email" required>
+      <mat-error *ngIf="formErrors.email">
+          {{ formErrors.email }}
+        </mat-error>
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field class="login-full-width">
+      <input type="password" matInput placeholder="Passwort" 
+      formControlName="password" required>
+      <mat-error *ngIf="formErrors.password">
+          {{ formErrors.password }}
+        </mat-error>
+    </mat-form-field>
+  </p>
+
+  <div class="button">
+    <button type="submit" mat-raised-button color="accent" 
+    [disabled]="!userForm.valid" mat-button>OK</button>
+  </div>
+
+  <span *ngIf="userForm.valid">Dateneingabe ist gültig</span>
+
+</form>
+</mat-card-content>
+</mat-card>

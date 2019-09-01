@@ -36,7 +36,7 @@ export class LiveWellComponent implements OnInit {
     {
       imgSrc: 'https://media.mnn.com/assets/images/2017/09/man-running.jpg.653x0_q80_crop-smart.jpg',
       title: 'Bewegung macht mich glücklich.',
-      description: `Moving makes me happy. Le sport me rend heuereux.`,
+      description: `Moving makes me happy. Le sport me rend heureux.`,
       button: 'Gut Leben ist die beste Rache.'
     },
     {
@@ -266,7 +266,7 @@ export class LiveWellComponent implements OnInit {
       imgSrc: 'https://www.thepossibility.in/wp-content/uploads/2018/03/image_1.jpg',
       title: 'Ich bin glücklich mit meinem Leben. Ich erwarte von der Zukunft viel Gutes.',
       // tslint:disable-next-line: max-line-length
-      description: `I am happy to be alive and await from the future, positive events. Je suis heureux de vivre et attend de l'avenir des evenements heuereux.`,
+      description: `I am happy to be alive and await from the future, positive events. Je suis heureux de vivre et attend de l'avenir des evenements heureux.`,
       button: 'Living well is the best revenge.'
     },
     {
@@ -694,16 +694,6 @@ export class LiveWellComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // for (let i = 1; i <= 10; i++) {
-    //   this.cardList.push({
-    //     imgSrc: 'http://via.placeholder.com/200',
-    //     title: 'Card No. ' + i,
-    //     description:
-    //       'Angular Flex Layout provides a sophisticated layout API using FlexBox CSS + mediaQuery.\
-    //       This module provides Angular developers with component layout features using a custom Layout API, \
-    //       mediaQuery observables, and injected DOM flexbox-2016 css stylings.'
-    //   });
-    // }
   }
 
 }
