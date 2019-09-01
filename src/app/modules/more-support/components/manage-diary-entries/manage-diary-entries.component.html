@@ -38,6 +38,7 @@
                 <table class="example-full-width" cellspacing="0">
                   <thead>
                     <tr>
+                      <th>Datum</th>
                       <th>Name</th>
                       <th>Likes</th>
                       <th>Löschen</th>
@@ -45,6 +46,9 @@
                   </thead>
                   <tbody>
                     <tr *ngFor="let entry of diaryEntries$ | async">
+                        <td style="text-align: center;">
+                            {{ entry.date.toDate() | date }}
+                        </td>
                       <td style="text-align: center;">
                           {{ entry.title }}
                       </td>

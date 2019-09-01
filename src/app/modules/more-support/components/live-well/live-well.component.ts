@@ -342,10 +342,149 @@ export class LiveWellComponent implements OnInit {
       button: 'Gut Leben ist die beste Rache.'
     },
     {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
+      imgSrc: 'https://dev.skipprichard.com/wp-content/uploads/2018/11/bigstock-Close-up-Of-Gratitude-Word-Wit-265169737.jpg',
+      title: 'Ich nehme mir die Zeit dankbar zu sein.',
+      description: `I take the time to be grateful. Je prends le temps d'etre gratifiant.`,
+      button: 'Living well is the best revenge.'
+    },
+    {
+      imgSrc: 'https://www.holidayholiday.com.au/wp-content/uploads/Mantra-Sun-City.jpg',
+      title: 'Ich finde meinen Platz.',
+      description: `I find my place. Je trouves ma place.`,
+      button: 'Bien vivre est la meilleure revanche.'
+    },
+    {
+      imgSrc: 'https://i2.wp.com/sunshineandspoiledmilk.com/wp-content/uploads/2016/11/eyelashes-831801_1920.jpg?fit=1920%2C1280',
+      title: 'Ich bin wunderbar gemacht.',
+      description: `I have been made wonderfully. J'ai ete fait merveilleusement.`,
+      button: 'Gut Leben ist die beste Rache.'
+    },
+    {
+      imgSrc: 'https://nextshark.com/wp-content/uploads/2015/02/HNCK4153-1300x867-e1424125574382-1280x720.jpg',
+      title: 'Es gibt immer mehrere Lösungen.',
+      description: `There are always more solutions. Il y a toujours plus de solution.`,
+      button: 'Living well is the best revenge.'
+    },
+    {
+      imgSrc: 'https://hbr.org/resources/images/article_assets/2019/01/Jan19_18_801408290-2.jpg',
+      title: 'Ich darf um Hilfe bitten.',
+      description: `I can ask for help. Je peux demander de l'aide.`,
+      button: 'Bien vivre est la meilleure revanche.'
+    },
+    {
+      imgSrc: 'https://miro.medium.com/max/11520/1*tpZZvcsgcUlCZgadsu3XMA.jpeg',
+      title: 'Ich erlaube mir nur was für mich zu tun.',
+      description: `I do something only for me. Je fais quelque chose que pour moi.`,
+      button: 'Gut Leben ist die beste Rache.'
+    },
+    {
+      imgSrc: 'http://blog.reifenetzwerk.de/wp-content/uploads/2014/01/Fotolia_55581696_M.jpg',
+      title: 'Ich bin schon ganz OK.',
+      description: `I am OK. Je suis OK.`,
+      button: 'Living well is the best revenge.'
+    },
+    {
+      imgSrc: 'http://3.bp.blogspot.com/-Ac8qC-RSwtY/VUUH10gP_9I/AAAAAAAAAKc/BAAbLS4sNZ8/s1600/iStock_000056310002Medium.jpg',
+      title: 'Desto LANGSAMER, desto SCHNELLER.',
+      description: `The SLOWER, the FASTER. Plus LENTEMENT, plus RAPIDEMENT.`,
+      button: 'Bien vivre est la meilleure revanche.'
+    },
+    {
+      imgSrc: 'https://reporter.mcgill.ca/wp-content/uploads/2018/11/sleep.gif',
+      title: 'Ich schlafe eine Nacht über wichtige Entscheidungen.',
+      description: `I sleep a night, over imporatnt decisions. Je dorts une nuit, avant de prendre des decisions importantes.`,
+      button: 'Gut Leben ist die beste Rache.'
+    },
+    {
+      imgSrc: 'http://davidlazarphoto.com/amp/wp-content/uploads/2012/07/30-David-Lazar-Lion-Teeth.jpg',
+      title: 'Ich habe Angst und tu\'s trotzdem. Ich dominiere die Angst.',
+      description: `I am scared and go ahead and do it. J'ai peur et je le fais quand meme. je domine la peur.`,
+      button: 'Living well is the beste revenge.'
+    },
+    {
+      imgSrc: 'https://ichef.bbci.co.uk/images/ic/1200x675/p05n7hyj.jpg',
+      title: 'Ich tanze als ob niemand zusehen würde. Ich bin kreativ',
+      description: `I dance as if nobody is watching. Je dance comme si ne personne regarde. Je suis creatif.`,
+      button: 'Bien vivre est la meilleure revanche.'
+    },
+    {
+      imgSrc: 'https://drbpresents.com/wp-content/uploads/2018/04/Woman-in-bubble-bath-for-self-care-1200x0-c-default.jpeg',
+      title: 'Ich würdige was mir gelungen ist. Ich bin stolz auf mich',
+      description: `I honor what I have done. J'honneur ce que j'ai fais. I am proud of myself. Je suis fiere de moi.`,
+      button: 'Gut Leben ist die beste Rache.'
+    },
+    {
+      imgSrc: 'https://generation-nachhaltigkeit.de/wp-content/uploads/2018/12/a-positive-vision-for-the-future.jpg',
+      title: 'Es wird alles GUT.',
+      description: `All will be WELL. Tout va etre BIEN.`,
+      button: 'Living well is the best revenge.'
+    },
+    {
+      imgSrc: 'https://www.sheknows.com/wp-content/uploads/2018/08/fxll77n6smiekuafcxfr.jpeg',
+      title: 'Ich verabrede mich.',
+      description: `I go ona date. Je vais prendre un RDV.`,
+      button: 'Bien vivre est la meilleure revanche.'
+    },
+    {
+      imgSrc: 'https://www.psychologies.co.uk/sites/default/files/styles/psy2_page_header/public/field/image/iStock-643137108-web.jpg',
+      title: 'Singen tut gut.',
+      description: `Singing is fun. Chanter fait du bien.`,
+      button: 'Gut Leben ist die beste Rache.'
+    },
+    {
+      imgSrc: 'https://miro.medium.com/max/1125/1*LeZUIg0yTz60fmvzJC9T1Q.jpeg',
+      title: 'Hier bestimme ich.',
+      description: `I rule here. Je commandes ici.`,
+      button: 'Living well is the best revenge.'
+    },
+    {
+      imgSrc: 'https://s3.amazonaws.com/ogden_images/www.ironmountaindailynews.com/images/2019/08/28103456/loyd-1100x733.jpg',
+      title: 'Auch Umwege sind Wege zum Ziel. Ziel orientiert.',
+      description: `Detours also lead to the goal. Detours menent aussi au bute.`,
+      button: 'Bien vivre est la meilleure revanche.'
+    },
+    {
+      imgSrc: 'https://miro.medium.com/max/1838/1*UnH00wfENTHP_zv5BYpN3Q.jpeg',
+      title: 'Ich darf die Dinge stehen lassen wo sie hingehören.',
+      description: `I leave things where they are. Je laisse les choses ou ils sont.`,
+      button: 'Gut Leben ist die beste Rache.'
+    },
+    {
+      imgSrc: 'https://366.life/home/wp-content/uploads/2019/02/look-inside-awakes-meditation-dreams-awakening.jpg',
+      title: 'Mein Körper braucht: Ruhe, Code, Liebe, Bewegung, Essen, Trinken, Frische Luft.',
+      description: `My body needs: rest, code, exercise, food, drink, love, fresh air.`,
+      button: 'Living well is the best revenge.'
+    },
+    {
+      imgSrc: 'http://snagfilms-a.akamaihd.net/72/05/62ae172c460eaf0cf54ab840b29b/9382-lec6-1536x865.jpg',
+      title: 'Ich will meine Beziehungen pflegen. Ich suche mir die Menschen sorgfältig aus.',
+      description: `I want to maintain my relationships. je veux entretenir mes relations.`,
+      button: 'Bien vivre est la meilleure revanche.'
+    },
+    {
+      imgSrc: 'https://webserver-assets-jackcanfield.s3.amazonaws.com/wp-content/uploads/2016/01/goal-setting-tips-to-achieve-goals.jpg',
+      title: 'Gute Ziele sind die, die ich mit Lust und Freude angehe.',
+      description: `Good goals, are those I enjoy doing with passion and joy. Bonnes buttes j'y fait avec passion et joie.`,
+      button: 'Gut Leben ist die beste Rache.'
+    },
+    {
+      imgSrc: 'https://hbr.org/resources/images/article_assets/2017/06/jun17-13-34948064.jpg',
+      title: 'Ich betrachte meine Probleme aus einer anderen Perspektive.',
+      description: `I look at my problems from a different perspective. Je regardes mes problemes sous un angle nouveau.`,
+      button: 'Living well is the best revenge.'
+    },
+    {
+      imgSrc: 'https://static.parade.com/wp-content/uploads/2019/08/3250607.jpg',
+      title: 'Lass uns wieder miteinander reden. Kommunikation.',
+      description: `Let's talk again. Communication. Vient on parle ensemble. Communiquer.`,
+      button: 'Bien vivre est la meilleure revanche.'
+    },
+    {
+      // tslint:disable-next-line: max-line-length
+      imgSrc: 'https://a57.foxnews.com/a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2018/09/640/320/1862/1048/tooth_jewelry.jpg?ve=1&tl=1?ve=1&tl=1',
+      title: 'Ich übe mich darin den Mund aufzumachen. Ich sehe das anders.',
+      description: `I practice opening my mouth. I see things differently. Je m'entraines a ouvrir ma bouche.`,
+      button: 'Gut Leben ist die beste Rache.'
     },
     {
       imgSrc: '',
@@ -370,325 +509,7 @@ export class LiveWellComponent implements OnInit {
       title: '',
       description: ``,
       button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },{
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-    {
-      imgSrc: '',
-      title: '',
-      description: ``,
-      button: ''
-    },
-
+    }
   ];
 
   constructor() { }

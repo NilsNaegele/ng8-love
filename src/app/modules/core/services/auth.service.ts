@@ -23,7 +23,7 @@ export class AuthService {
         this.user = this.afAuth.authState.pipe(
           switchMap(user => {
             if (user) {
-              return this.afs.doc<User>(`users/${user.uid}`).valueChanges()
+              return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
             } else {
               return of(null);
             }
@@ -85,7 +85,7 @@ export class AuthService {
           email: user.email || null,
           displayName: user.displayName || 'no name',
           photoURL: user.photoUrl || 'https://goo.gl/Fz9nrQ'
-      }
+      };
       return userRef.set(data);
     }
 
