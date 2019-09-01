@@ -1,3 +1,4 @@
+import { AuthGuardService } from './../core/services/auth-guard.service';
 import { ViewDiaryEntriesComponent } from './components/view-diary-entries/view-diary-entries.component';
 import { ManageDiaryEntriesComponent } from './components/manage-diary-entries/manage-diary-entries.component';
 import { LiveWellComponent } from './components/live-well/live-well.component';
@@ -35,11 +36,13 @@ const moreSupportRoutes: Routes = [
   },
   {
     path: 'manage-diary-entries',
-    component: ManageDiaryEntriesComponent
+    component: ManageDiaryEntriesComponent,
+    canActivate: [AuthGuardService]
   },
   {
     path: 'view-diary-entries',
-    component: ViewDiaryEntriesComponent
+    component: ViewDiaryEntriesComponent,
+    canActivate: [AuthGuardService]
   }
 ];
 

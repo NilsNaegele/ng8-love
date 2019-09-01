@@ -1,6 +1,13 @@
 <mat-card *ngIf="newUser">
         <mat-card-title class="center">Registrieren</mat-card-title>
-            <mat-slider (change)="toggleForm()"></mat-slider>Anmelden?
+            <mat-slider 
+                      (change)="toggleForm()"
+                      [max]="max"
+                      [min]="min"
+                      [step]="step"
+                      [(ngModel)]="value"
+                      >
+                    </mat-slider>Anmelden?
   <mat-card-content>
     <form class="login-form" [formGroup]="userForm" (ngSubmit)="signup()">
       <p>
@@ -35,7 +42,13 @@
 
 <mat-card *ngIf="!newUser">
     <mat-card-title class="center">Anmelden</mat-card-title>
-    <mat-slider (change)="toggleForm()"></mat-slider>Registrieren?
+    <mat-slider 
+            (change)="toggleForm()"
+            [max]="max"
+            [min]="min"
+            [step]="step"
+            [(ngModel)]="value">
+          </mat-slider>Registrieren?
 <mat-card-content>
 <form class="login-form" [formGroup]="userForm" (ngSubmit)="login()">
   <p>

@@ -5,8 +5,9 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CKEditorModule } from 'ng2-ckeditor';
 
-import {MAT_DATE_LOCALE} from '@angular/material';
+import { MAT_DATE_LOCALE } from '@angular/material';
 
 import { MatDividerModule } from '@angular/material/divider';
 import { MatBadgeModule } from '@angular/material/badge';
@@ -66,6 +67,7 @@ const SHARED_MODULES = [
   RouterModule,
   HttpClientModule,
   FlexLayoutModule,
+  CKEditorModule,
   MatToolbarModule,
   MatCardModule,
   MatIconModule,

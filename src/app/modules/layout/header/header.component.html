@@ -17,7 +17,10 @@
             <mat-icon>account_circle</mat-icon>
     </button>
     <button *ngIf="isLoggedIn" mat-icon-button (click)="signout()">
-            <mat-icon>power_settings_new</mat-icon>
+            <mat-icon>offline_bolt</mat-icon>
+    </button>
+    <button *ngIf="isLoggedIn" mat-icon-button routerLink="/add-superpost" >
+            <mat-icon>post_add</mat-icon>
     </button>
     <button mat-icon-button [mat-menu-trigger-for]="menu">
         <mat-icon>more_vert</mat-icon>

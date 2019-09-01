@@ -1,0 +1,57 @@
+<mat-card class="post-card">
+    <div class="post-form">
+        <h2 class="center-text">
+            <span *ngIf="!editMode">Add a</span>
+            <span *ngIf="editMode">Edit</span>
+            Post
+        </h2>
+        <mat-form-field class="block post-net">
+            <input matInput placeholder="Post URL (no slashes, spaces or special characters)" type="text" [(ngModel)]="newURL">
+        </mat-form-field>
+    
+        <div>
+            <mat-form-field class="post-net">
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="newDate" (focus)="picker.open()">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            </mat-form-field>
+            <mat-datepicker #picker></mat-datepicker>
+        </div>
+    
+        <mat-form-field class="block post-net">
+            <input matInput placeholder="Title" [(ngModel)]="newTitle">
+        </mat-form-field>
+    
+        <div class="upload-button post-net">
+            <button mat-raised-button class="mat-upload-button post-net">
+                <span *ngIf="!imageUrl">Upload</span>
+                <span *ngIf="imageUrl">Change</span>
+                Featured Image
+            </button>
+            <input type="file" id="uploadImage" name="thumbnail" class="native-upload" (change)="handleFiles($event)" accept=".png,.jpg">
+        </div>
+        <img [src]="imageUrl" *ngIf="imageUrl" class="thumbnail">
+        <div class="no-image" *ngIf="!imageUrl">No image chosen</div>
+    
+        <ckeditor class="post-net"
+            [(ngModel)]="newBody"
+            [config]="{uiColor: '#FFFFFF', extraPlugins: 'divarea'}"
+            [readonly]="false">
+        </ckeditor>
+    
+        <mat-slide-toggle ngDefaultControl [(ngModel)]="newPublished">
+            <span *ngIf="!newPublished">Publish</span>
+            <span *ngIf="newPublished">Un-Publish</span>
+        </mat-slide-toggle>
+    
+        <button
+            mat-raised-button
+            (click)="addPost(newURL, newDate, newTitle, newBody, newPublished)"
+            class="submit">
+            Save Post
+        </button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</mat-card>

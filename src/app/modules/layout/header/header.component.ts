@@ -69,6 +69,7 @@ export class HeaderComponent implements OnInit {
   }
 
   openLogin() {
+    // this.authService.signOut();
     const dialogRef = this.matDialog.open(LoginComponent, {
       width: '500px',
       // data: {}

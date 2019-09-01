@@ -8,6 +8,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -25,6 +26,8 @@ import { SharedModule } from './modules/shared/shared.module';
 import { DbtModule } from './modules/dbt/dbt.module';
 import { CrisisMgtModule } from './modules/crisis-mgt/crisis-mgt.module';
 import { HeroesModule } from './modules/heroes/heroes.module';
+import { AdminModule } from './modules/admin/admin.module';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -39,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireStorageModule,
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireDatabaseModule,
@@ -49,6 +53,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SharedModule,
     LayoutModule,
     HeroesModule,
+    AdminModule,
     CookieModule.forRoot(),
     TranslateModule.forRoot({
       loader: {

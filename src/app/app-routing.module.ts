@@ -32,6 +32,11 @@ const routes: Routes = [
     path: 'heroes-liked',
     loadChildren: () => import('./modules/heroes/heroes.module').then(mod => mod.HeroesModule)
   },
+  {
+    path: 'add-post',
+    loadChildren: () => import('./modules/admin/admin.module').then(mod => mod.AdminModule)
+  },
+
   // {
   //   path: '**',
   //   redirectTo: '/welcome',
