@@ -7,7 +7,6 @@ import { Observable, of } from 'rxjs';
 import { User } from '../models/user';
 import { switchMap } from 'rxjs/operators';
 import { auth } from 'firebase/app';
-import { AngularFireDatabase } from '@angular/fire/database';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +16,6 @@ export class AuthService {
 
   constructor(private afAuth: AngularFireAuth,
               private afs: AngularFirestore,
-              private db: AngularFireDatabase,
               private router: Router,
               private snackBarService: SnackBarService) {
         this.user = this.afAuth.authState.pipe(

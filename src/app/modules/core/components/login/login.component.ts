@@ -15,8 +15,17 @@ export class LoginComponent implements OnInit {
   newUser = true; // toggle login or signup
   passReset = false;
 
+  max = 10;
+  min = 0;
+  showTicks = false;
+  step = 5;
+  value = 0;
+
   toggleForm() {
+    if (this.value === 10) {
     this.newUser = !this.newUser;
+    this.value = 0;
+    }
   }
 
   signup() {
