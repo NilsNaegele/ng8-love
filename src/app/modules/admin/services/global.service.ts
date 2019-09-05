@@ -7,6 +7,7 @@ import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 export class GlobalService {
   admin = new BehaviorSubject(null);
   user = new BehaviorSubject(null);
+  searchTerm = new BehaviorSubject('');
 
   constructor() { }
 }

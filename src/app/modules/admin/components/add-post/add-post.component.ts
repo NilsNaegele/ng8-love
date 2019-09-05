@@ -67,7 +67,7 @@ export class AddPostComponent implements OnInit {
 
         if (this.router.url.includes('approval')) {
           this.currentPost = this.db.object('/approvals/posts/' + params.key);
-          this.db.object('/approvals/posts/' + this.postKey).valueChanges().subscribe((approvalPost:any) => {
+          this.db.object('/approvals/posts/' + this.postKey).valueChanges().subscribe((approvalPost: any) => {
             this.entityObject = approvalPost;
           });
         } else {
@@ -82,7 +82,7 @@ export class AddPostComponent implements OnInit {
           });
         }
 
-        this.currentPost.valueChanges().subscribe((p:any) => {
+        this.currentPost.valueChanges().subscribe((p: any) => {
           this.newURL = p.url;
           this.newDate = p.date;
           this.newTitle = p.title;
@@ -187,6 +187,7 @@ export class AddPostComponent implements OnInit {
       const snackBarRef = this.snackBar.open('Post saved', 'OK!', {
         duration: 3000
       });
+      this.router.navigate(['view-posts']);
     }
 
     this.validateFields(newURL, newTitle, newBody, newDate);

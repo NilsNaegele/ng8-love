@@ -1,0 +1,19 @@
+@import '../../../../../assets/css/variables.scss';
+
+.center {
+    text-align: center;
+}
+.container {
+    box-sizing: border-box;
+    padding: 30px;
+}
+.post-header {
+    p {
+        color: rgba(0, 0, 0, 0.87);
+        font-size: 0.8em;
+    }
+
+    img {
+        max-width: 150px;
+    }
+}
