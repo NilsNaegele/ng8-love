@@ -27,6 +27,7 @@ import { DbtModule } from './modules/dbt/dbt.module';
 import { CrisisMgtModule } from './modules/crisis-mgt/crisis-mgt.module';
 import { HeroesModule } from './modules/heroes/heroes.module';
 import { AdminModule } from './modules/admin/admin.module';
+import { SkillsModule } from './modules/skills/skills.module';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -54,6 +55,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     LayoutModule,
     HeroesModule,
     AdminModule,
+    SkillsModule,
     CookieModule.forRoot(),
     TranslateModule.forRoot({
       loader: {

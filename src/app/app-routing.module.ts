@@ -36,6 +36,10 @@ const routes: Routes = [
     path: 'add-post',
     loadChildren: () => import('./modules/admin/admin.module').then(mod => mod.AdminModule)
   },
+  {
+    path: 'projects',
+    loadChildren: () => import('./modules/skills/skills.module').then(mod => mod.SkillsModule)
+  },
 
   // {
   //   path: '**',
