@@ -1,0 +1,273 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$custom-green: (
+  50: #e6fcf5,
+  100: #bff8e6,
+  200: #95f3d5,
+  300: #6beec4,
+  400: #4beab8,
+  500: #2be6ab,
+  600: #26e3a4,
+  700: #20df9a,
+  800: #1adb91,
+  900: #10d580,
+  A100: #ffffff,
+  A200: #cfffe9,
+  A400: #9cffd1,
+  A700: #83ffc5,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text
+  )
+);
+
+$app-primary: mat-palette($mat-deep-purple);
+$app-accent: mat-palette($custom-green, 600);
+$app-warn: mat-palette($mat-red);
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+
+$primary: map-get($app-theme, primary);
+$accent: map-get($app-theme, accent);
+$warn: map-get($app-theme, warn);
+
+@mixin linkHover() {
+    --hover-box-translate-x: 120%;
+    --hover-box-skew: 0;
+  
+    position: relative;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background: mat-color($primary, lighter, 0.3);
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      transition: transform 0.2s cubic-bezier(0.35, 0, 0.25, 1);
+      transform: skew(var(--hover-box-skew)) translateX(var(--hover-box-translate-x));
+    }
+  
+    &:not(.active):hover::after {
+      --hover-box-translate-x: 200px;
+      --hover-box-skew: 20deg;
+    }
+  
+    &.active {
+      color: mat-color($primary);
+      --hover-box-translate-x: 0;
+      --hover-box-skew: 0deg;
+    }
+  }
+  
+  @mixin small-only {
+    @media (max-width: 599px) {
+      @content;
+    }
+  }
+  
+  @mixin medium-up {
+    @media (min-width: 600px) {
+      @content;
+    }
+  }
+  
+  @mixin large-up {
+    @media (min-width: 900px) {
+      @content;
+    }
+  }
+  
+  @mixin for-desktop-up {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+@mixin wrapper() {
+  --wrapper-width: 650px;
+  --padding-bottom: 20px;
+
+  margin: 0 auto;
+  max-width: var(--wrapper-width);
+  padding: 65px 12px var(--padding-bottom);
+
+  @include medium-up() {
+    --padding-bottom: 50px;
+  }
+
+  @include large-up() {
+    --wrapper-width: 850px;
+  }
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+main {
+  flex: 1;
+  overflow: scroll;
+  background: #eceff1;
+}
+
+.projects-header {
+  height: 300px;
+  background: white;
+  margin-bottom: -150px;
+}
+
+.welcome-message {
+  max-width: 350px;
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+.welcome-subtitle {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.welcome-wrapper {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    height: 200px;
+    transform: translateX(100px);
+
+    @include small-only {
+      display: none;
+    }
+
+    @include large-up() {
+      transform: translateX(0px);
+    }
+  }
+}
+
+.welcome-wrapper,
+.projects-list-wrapper {
+  @include wrapper();
+}
+
+.projects-grid {
+  --grid-gap: 20px;
+  --column-template: 1fr;
+
+  display: grid;
+  grid-column-gap: var(--grid-gap);
+  grid-row-gap: var(--grid-gap);
+  grid-template-columns: var(--column-template);
+
+  @include medium-up() {
+    --column-template: 1fr 1fr;
+  }
+
+  @include large-up() {
+    --column-template: 1fr 1fr 1fr;
+  }
+}
+
+mat-card {
+  height: 130px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  .card-ripple {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &:hover {
+    background: whitesmoke;
+  }
+}
+
+mat-card-content {
+  flex: 1;
+}
+
+.projects-list-wrapper {
+  h5 {
+    margin: 0 0 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.54);
+  }
+}
+
+.project-name {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.add-project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: mat-color($primary);
+  font-weight: 500;
+
+  mat-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+}
+
+mat-card-actions {
+  display: flex;
+  align-items: center;
+}
+
+.progress {
+  flex: 1;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+
+  .score {
+    margin-left: 10px;
+    font-weight: 100;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: mat-color($primary);
+  }
+
+  ac-score-chart {
+    width: 30px;
+  }
+}
