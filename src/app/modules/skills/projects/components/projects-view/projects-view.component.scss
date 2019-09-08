@@ -192,6 +192,7 @@ main {
 
 mat-card {
   height: 130px;
+  width: 238px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -267,7 +268,7 @@ mat-card-actions {
     color: mat-color($primary);
   }
 
-  ac-score-chart {
+  app-score-chart {
     width: 30px;
   }
 }

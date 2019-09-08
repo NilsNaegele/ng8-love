@@ -30,8 +30,8 @@ export interface ProjectDialogData {
 }
 
 export interface ProjectDialogResult {
-    payload: Partial<Project>;
-    type: ProjectDialogResultType;
+    payload?: Partial<Project>;
+    type?: ProjectDialogResultType;
 }
 
 class CustomErrorStateMatcher implements ErrorStateMatcher {

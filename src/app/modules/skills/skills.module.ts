@@ -19,11 +19,11 @@ import { ChecklistModule } from './checklist/checklist.module';
       maxAge: 25,
       logOnly: environment.production
     }),
-    StoreRouterConnectingModule.forRoot(),
     SharedModule,
     ProjectsModule,
     ChecklistModule,
-    SkillsRoutingModule
+    SkillsRoutingModule,
+    StoreRouterConnectingModule.forRoot(),
   ]
 })
 export class SkillsModule { }

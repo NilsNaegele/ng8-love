@@ -3,6 +3,18 @@ import { extractedRouteParams } from '../../shared/router.utils';
 import { computeScore } from '../../state/skills-state.utils';
 import { SkillsSelectors } from '../../state/skills.selectors';
 import { Project } from '../models/projects.model';
+import { EntityState } from '../../shared/models';
+
+export const defaultProject: EntityState<Project> = {
+  default: {
+  id: 'default',
+  name: 'default',
+  disabledCategories: {},
+  favorites: {},
+  items: {},
+  creationTime: Date.now()
+  }
+};
 
 export namespace ProjectsSelectors {
   export const getProjectEntities = createSelector(
@@ -58,6 +70,10 @@ export namespace ProjectsSelectors {
     getProjectEntities,
     SkillsSelectors.getCategoryEntities,
     (projectEntities, categoryEntities) => {
+      if (projectEntities === undefined) {
+        projectEntities = defaultProject;
+      }
+      // console.log(projectEntities, categoryEntities);
       return Object.keys(projectEntities).reduce((scores, projectId) => {
         const disabledCategories = projectEntities[projectId].disabledCategories;
         const activeCategories = Object.keys(categoryEntities).filter(categoryId => !disabledCategories[categoryId]);
@@ -76,6 +92,10 @@ export namespace ProjectsSelectors {
     getProjectEntities,
     getProjectsScores,
     (projectEntities, projectScores) => {
+      // console.log(projectEntities);
+      if (projectEntities === undefined) {
+        projectEntities = defaultProject;
+      }
       const addScore = (project): Project => {
         return {
           ...project,
