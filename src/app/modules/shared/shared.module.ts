@@ -38,6 +38,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatTreeModule } from '@angular/material/tree';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
@@ -56,6 +57,7 @@ import { ValidationStressToleranceComponent } from './components/validation-bott
 import { ValidationSelfComponent } from './components/validation/validation-self/validation-self.component';
 import { ValidationOthersComponent } from './components/validation/validation-others/validation-others.component';
 import { ValidationGetComponent } from './components/validation/validation-get/validation-get.component';
+import { ScoreChartComponent } from '../skills/shared/components/score-chart/score-chart.component';
 
 
 
@@ -97,11 +99,13 @@ const SHARED_MODULES = [
   MatTreeModule,
   MatBottomSheetModule,
   MatDatepickerModule,
-  MatNativeDateModule
+  MatNativeDateModule,
+  MatAutocompleteModule
 ];
 
 const SHARED_COMPONENTS = [
-  WelcomeDialogComponent
+  WelcomeDialogComponent,
+  ScoreChartComponent
 ];
 
 @NgModule({

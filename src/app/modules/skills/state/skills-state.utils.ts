@@ -10,7 +10,8 @@ export const createChecklistItem = (
     return {
         ...itemEntities[id],
         checked: projectItems[id],
-        favorite: favorites[id]
+        // TODO: favorites is null here
+        // favorite: favorites[id]
     };
 };
 

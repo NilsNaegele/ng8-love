@@ -1,0 +1,6 @@
+<mat-checkbox color="primary" (click)="toggleItem.emit(item)" [checked]="item.checked"></mat-checkbox>
+<a class="any-link" [class.done]="item.checked" [routerLink]="['../../checklist', item.category, item.id]">{{ item.title }}</a>
+<app-checklist-favorite-button
+  [active]="item.favorite"
+  (toggle)="toggleFavorite.emit(item)"
+></app-checklist-favorite-button>
