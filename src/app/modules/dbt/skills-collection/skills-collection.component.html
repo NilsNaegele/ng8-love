@@ -1,0 +1,51 @@
+<mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Suchen">
+</mat-form-field>
+      
+      <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+
+          <!-- ID Column -->
+          <ng-container matColumnDef="activity">
+            <th mat-header-cell *matHeaderCellDef> Stresstoleranz Skills: Aktivitäten,
+                Sich Ablenken durch ...
+            </th>
+            <td mat-cell *matCellDef="let row"> {{row.activity}} </td>
+          </ng-container>
+      
+          <!-- Progress Column -->
+          <ng-container matColumnDef="skillKnown">
+            <th mat-header-cell *matHeaderCellDef> Skills bekannt? </th>
+            <td mat-cell *matCellDef="let row"> {{row.skillKnown}} </td>
+          </ng-container>
+      
+          <!-- skillKnown Column -->
+          <ng-container matColumnDef="skillAvailable">
+            <th mat-header-cell *matHeaderCellDef> Skills verfügbar? </th>
+            <td mat-cell *matCellDef="let row"> {{row.skillAvailable}} </td>
+          </ng-container>
+      
+          <!-- Color Column -->
+          <ng-container matColumnDef="skillApplied">
+            <th mat-header-cell *matHeaderCellDef> Skills eingesetzt?
+                    0 = überhaupt nicht, 1 = ein wenig, 2 = manchmal, 3 = oft, 4 = sehr oft       
+            </th>
+            <td mat-cell *matCellDef="let row"> {{row.skillApplied}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="effective">
+                <th mat-header-cell *matHeaderCellDef> Wirksamkeit? 
+                        0 = nicht wirksam, 1 = ein wenig wirksam, 2 = mittelmäßig wirksam, 3 = wirksam,
+                        4 = sehr wirksam
+                </th>
+                <td mat-cell *matCellDef="let row"> {{row.effective}}</td>
+            </ng-container>
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+          class="example-element-row">
+          </tr>
+        </table>
+      
+        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+      </div>

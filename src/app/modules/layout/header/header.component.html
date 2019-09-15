@@ -19,6 +19,9 @@
     <button *ngIf="isLoggedIn" mat-icon-button (click)="signout()">
             <mat-icon>offline_bolt</mat-icon>
     </button>
+    <button mat-icon-button routerLink="/skills-collection">
+        <mat-icon>table_chart</mat-icon>
+    </button>
     <button *ngIf="isLoggedIn" mat-icon-button routerLink="/add-superpost" >
             <mat-icon>post_add</mat-icon>
     </button>

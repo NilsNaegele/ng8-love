@@ -39,6 +39,8 @@ import { MatTreeModule } from '@angular/material/tree';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
@@ -100,7 +102,9 @@ const SHARED_MODULES = [
   MatBottomSheetModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
+  MatTableModule,
+  MatPaginatorModule
 ];
 
 const SHARED_COMPONENTS = [

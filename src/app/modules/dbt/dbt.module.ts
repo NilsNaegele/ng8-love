@@ -13,6 +13,7 @@ import { RelationshipsComponent } from './relationships/relationships.component'
 import { MoreGoodnessMindfulnessComponent } from './mindfulness/more-goodness-mindfulness/more-goodness-mindfulness.component';
 import { SelfEsteemComponent } from './self-esteem/self-esteem.component';
 import { AddictionComponent } from './addiction/addiction.component';
+import { SkillsCollectionComponent } from './skills-collection/skills-collection.component';
 
 
 
@@ -27,7 +28,8 @@ import { AddictionComponent } from './addiction/addiction.component';
     RelationshipsComponent,
     MoreGoodnessMindfulnessComponent,
     SelfEsteemComponent,
-    AddictionComponent
+    AddictionComponent,
+    SkillsCollectionComponent
   ],
   imports: [
     DbtRoutingModule,

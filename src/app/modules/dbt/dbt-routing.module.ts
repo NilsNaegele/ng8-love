@@ -10,6 +10,7 @@ import { StressToleranceComponent } from './stress-tolerance/stress-tolerance.co
 import { RelationshipsComponent } from './relationships/relationships.component';
 import { MoreGoodnessMindfulnessComponent } from './mindfulness/more-goodness-mindfulness/more-goodness-mindfulness.component';
 import { AddictionComponent } from './addiction/addiction.component';
+import { SkillsCollectionComponent } from './skills-collection/skills-collection.component';
 
 
 const dbtRoutes: Routes = [
@@ -48,6 +49,10 @@ const dbtRoutes: Routes = [
   {
     path: 'addiction',
     component: AddictionComponent
+  },
+  {
+    path: 'skills-collection',
+    component: SkillsCollectionComponent
   }
 ];
 
