@@ -9,6 +9,7 @@ import { MoreMindfulnessComponent } from './mindfulness/more-mindfulness/more-mi
 import { StressToleranceComponent } from './stress-tolerance/stress-tolerance.component';
 import { RelationshipsComponent } from './relationships/relationships.component';
 import { MoreGoodnessMindfulnessComponent } from './mindfulness/more-goodness-mindfulness/more-goodness-mindfulness.component';
+import { AddictionComponent } from './addiction/addiction.component';
 
 
 const dbtRoutes: Routes = [
@@ -43,6 +44,10 @@ const dbtRoutes: Routes = [
   {
     path: 'self-esteem',
     component: SelfEsteemComponent
+  },
+  {
+    path: 'addiction',
+    component: AddictionComponent
   }
 ];
 
