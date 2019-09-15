@@ -1,3 +1,4 @@
+import { SelfEsteemComponent } from './self-esteem/self-esteem.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -38,6 +39,10 @@ const dbtRoutes: Routes = [
   {
     path: 'relationships',
     component: RelationshipsComponent
+  },
+  {
+    path: 'self-esteem',
+    component: SelfEsteemComponent
   }
 ];
 

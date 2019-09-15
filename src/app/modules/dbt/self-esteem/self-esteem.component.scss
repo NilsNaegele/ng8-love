@@ -1,0 +1,105 @@
+.selfesteem-card {
+    max-width: 800px;
+  }
+
+  .selfesteem-net {
+      width: 100%;
+  }
+
+  .inline-block {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+  }
+
+  .center-text {
+      text-align: center;
+  }
+
+  .box {
+      border: 1px solid black;
+      background-color: lightgray;
+      text-align: center;
+      height: 100%; 
+      vertical-align: middle; 
+      line-height: 90px;
+  }
+  .center {
+    justify-content: center;
+    display: flex;
+  }
+
+  .round {
+    width: 500px;
+    margin: 20px auto;
+    height: 500px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    line-height: 500px;
+    text-align: center;
+    background: #000
+}
+
+.circle {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    padding: 50% 0;
+    border-radius: 50%;
+    background: #38a9e4;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+
+#left { 
+    float:left;
+    width:33%;
+}
+#right{
+    float:right;
+    width:33%;
+}
+#center{
+    margin:0 auto;
+    width:33%;
+}
+
+.left, .right {
+    width: 50%;
+    height: 400px;
+    float: left;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .left, .right {
+        height: 600px;
+    }
+    .fancyMuliFont {
+        font-family: 'Muli', sans-serif !important;
+        font-size: 14px !important;
+      }
+      .circle {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 0;
+        padding: 50% 0;
+        border-radius: 50%;
+        background: #38a9e4;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+      }
+  }

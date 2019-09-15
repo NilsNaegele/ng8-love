@@ -11,6 +11,7 @@ import { MoreMindfulnessComponent } from './mindfulness/more-mindfulness/more-mi
 import { StressToleranceComponent } from './stress-tolerance/stress-tolerance.component';
 import { RelationshipsComponent } from './relationships/relationships.component';
 import { MoreGoodnessMindfulnessComponent } from './mindfulness/more-goodness-mindfulness/more-goodness-mindfulness.component';
+import { SelfEsteemComponent } from './self-esteem/self-esteem.component';
 
 
 
@@ -23,7 +24,8 @@ import { MoreGoodnessMindfulnessComponent } from './mindfulness/more-goodness-mi
     MoreMindfulnessComponent,
     StressToleranceComponent,
     RelationshipsComponent,
-    MoreGoodnessMindfulnessComponent
+    MoreGoodnessMindfulnessComponent,
+    SelfEsteemComponent
   ],
   imports: [
     DbtRoutingModule,
