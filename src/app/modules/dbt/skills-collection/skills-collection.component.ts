@@ -12,7 +12,8 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {activity: 'Stresstoleranz Skills: Sich Ablenken durch ...', skillKnown: '', skillAvailable: '', skillApplied: '0 = überhaupt nicht, 1 = ein wenig, 2 = manchmal, 3 = oft, 4 = sehr oft', effective:  '0 = nicht wirksam, 1 = ein wenig wirksam, 2 = mittelmäßig wirksam, 3 = wirksam, 4 = sehr wirksam'},
+  {activity: 'Stresstoleranz Skills:', skillKnown: '', skillAvailable: '', skillApplied: '', effective:  ''},
+  {activity: 'Sich Ablenken durch...', skillKnown: '', skillAvailable: '', skillApplied: '', effective:  ''},
   {activity: '1. Puzzles', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '2. Computerspiel (Welches?), Programmieren (Sprache?)', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '3. Lesen (Was lesen Sie?)', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
@@ -34,7 +35,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {activity: '19. Etwas schreiben: a. Briefe b. Tagebuch c. Gedicht d. Pro-&-Contra-Liste e. Einkaufszettel', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '20. Etwas planen: a. einen Ausflug b. eine Reise c. eine besondere Stunde, in der man sich nur Zeit für sich selbst nimmt d. ein Fest e. eine Überraschung f. eigenes Beispiel:', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '21.  Eine beliebige Route auf dem Stadtplan einzeichnen und dann entlang dieser Route laufen, joggen, Rad fahren ...', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
-  {activity: 'Unterstützen anderer... ', skillKnown: '', skillAvailable: '', skillApplied: '0 = überhaupt nicht, 1 = ein wenig, 2 = manchmal, 3 = oft, 4 = sehr oft', effective:  '0 = nicht wirksam, 1 = ein wenig wirksam, 2 = mittelmäßig wirksam, 3 = wirksam, 4 = sehr wirksam'},
+  {activity: 'Unterstützen anderer... ', skillKnown: '', skillAvailable: '', skillApplied: '', effective:  ''},
   {activity: '22. Einen Freund besuchen', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '23. Einen Brief schreiben', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '24. Jemandem ein Geschenk, eine Blume basteln, malen, oder kaufen', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
@@ -54,7 +55,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {activity: '37. „Die haben die gleiche Chance wie ich, aber sie nutzen sie nicht!“ ', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '38.  „Ich habe etwas, was anderenicht haben (z. B. eine Arbeit, eine schöne Wohnung …).“', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '39.  „Im Vergleich zu früher habe ich heute viel erreicht (z. B. ich habe eine Ausbildung absolviert, ich habe ein paar gute Freunde …).“', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
-  {activity: 'Gefühle ersetzen l:', skillKnown: '', skillAvailable: '', skillApplied: '0 = überhaupt nicht, 1 = ein wenig, 2 = manchmal, 3 = oft, 4 = sehr oft', effective:  '0 = nicht wirksam, 1 = ein wenig wirksam, 2 = mittelmäßig wirksam, 3 = wirksam, 4 = sehr wirksam'},
+  {activity: 'Gefühle ersetzen l:', skillKnown: '', skillAvailable: '', skillApplied: '', effective:  ''},
   {activity: '(„Wenn ich negative Gefühle habe, versuche ich bewusst, angenehmere Gefühle auszulösen …“)', skillKnown: '', skillAvailable: '', skillApplied: '', effective:  ''},
   {activity: '40. Kinderprogramm anschauen', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '41. Roman lesen (Welches Buch löst positive Gefühle aus?)', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
@@ -62,7 +63,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {activity: '43. Etwas schreiben (z. B. Tagebuch, Brief, Gedicht)', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '44. Sich etwas Gutes tun: a. in einem Café etwas Warmes trinken b. ein neues Tagebuch kaufen c. sich eine Blume schenken d. sich zum Schlafen hinlegen e. eigenes Beispiel: ', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '45. Einen Kitschfilm oder Soap operas anschauen (GZSZ, Marienhof, Verbotene Liebe usw.)', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
-  {activity: 'Gefühle ersetzen II:', skillKnown: '', skillAvailable: '', skillApplied: '0 = überhaupt nicht, 1 = ein wenig, 2 = manchmal, 3 = oft, 4 = sehr oft', effective:  '0 = nicht wirksam, 1 = ein wenig wirksam, 2 = mittelmäßig wirksam, 3 = wirksam, 4 = sehr wirksam'},
+  {activity: 'Gefühle ersetzen II:', skillKnown: '', skillAvailable: '', skillApplied: '', effective:  ''},
   {activity: '(„Bei Wut, Ärger und starker Anspannung kann ich mir eine Erleichterung schaffen durch ...“)', skillKnown: '', skillAvailable: '', skillApplied: '', effective:  ''},
   {activity: '46. Papier zerknüllen/zerreißen, ein altes Laken zerreißen', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},
   {activity: '47. Einen Knoten in ein Handtuch machen und damit auf das Bett oder einen Sessel einschlagen', skillKnown: 'Ja / Nein', skillAvailable: 'Ja / Nein', skillApplied: '0 1 2 3 4', effective:  '0 1 2 3 4'},

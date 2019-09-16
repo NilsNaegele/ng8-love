@@ -41,6 +41,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
@@ -104,7 +105,8 @@ const SHARED_MODULES = [
   MatNativeDateModule,
   MatAutocompleteModule,
   MatTableModule,
-  MatPaginatorModule
+  MatPaginatorModule,
+  MatTooltipModule
 ];
 
 const SHARED_COMPONENTS = [
